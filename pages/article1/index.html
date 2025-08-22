@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <title>The Blob Blog</title>
+</head>
+<body>
+    <div class="container">
+        <p>If you mainly use <code>.md</code> files but want to leverage Nunjucks functionality in Eleventy, here is how you can do that:</p>
+<h3>Enable Nunjucks for Markdown files</h3>
+<p>In your Eleventy config file (<code>.eleventy.js</code>), set the Markdown template engine to Nunjucks. This way, Eleventy will first process your Markdown files with Nunjucks, enabling you to use Nunjucks syntax inside <code>.md</code> files:</p>
+<pre><code class="language-js">module.exports = function(eleventyConfig) {
+  return {
+    markdownTemplateEngine: &quot;njk&quot;,
+  };
+};
+</code></pre>
+<h3>How it works</h3>
+<ul>
+<li>Your <code>.md</code> files will still be parsed as Markdown, but before that, Nunjucks will render any Nunjucks tags or expressions inside.</li>
+<li>You can use Nunjucks features like includes, shortcodes, control structures, variables, filters, etc., directly inside your Markdown content.</li>
+<li>Your Markdown front matter can specify layouts that are <code>.njk</code> files, enabling rich templating with reusable layouts.</li>
+<li>For example, you can use this front matter in your <code>.md</code> file:</li>
+</ul>
+<pre><code class="language-yaml">---
+layout: base-layout.njk
+---
+
+# Hello Eleventy
+</code></pre>
+<p>This will use Nunjucks to set the variable and then render Markdown headings, combining both seamlessly.</p>
+<h3>Additional option: override template engine per file</h3>
+<p>If you want to enable Nunjucks selectively rather than globally for all Markdown files, add this to the front matter of individual <code>.md</code> files:</p>
+<pre><code class="language-yaml">---
+templateEngineOverride: njk,md
+---
+</code></pre>
+<p>This tells Eleventy to process the file first with Nunjucks, then with Markdown.</p>
+<h3>Summary</h3>
+<ul>
+<li>Set <code>markdownTemplateEngine</code> to <code>&quot;njk&quot;</code> in your Eleventy config for global support.</li>
+<li>Use Nunjucks code inline in your Markdown.</li>
+<li>Combine Nunjucks layouts (<code>.njk</code>) with <code>.md</code> content easily.</li>
+<li>Use the <code>templateEngineOverride</code> front matter for per-file control.</li>
+</ul>
+<p>This approach harnesses the full power of Nunjucks templating inside Markdown files, giving you the flexibility to create dynamic, modular content in Eleventy[web[2][3][4]</p>
+<p><a href="https://www.webstoemp.com/blog/modular-code-nunjucks-eleventy/">1</a>
+<a href="https://mvolkmann.github.io/blog/eleventy/templating-languages/?v=1.1.1">2</a>
+<a href="https://11ty.rocks/posts/going-beyond-static-with-eleventy/">3</a>
+<a href="https://cassey.dev/til/2021-07-29-include-nunjucks-in-markdown-11ty/">4</a>
+<a href="https://stackoverflow.com/questions/63404330/how-do-i-incorporate-multiple-markdown-files-into-a-nunjucks-template-with-eleve">5</a>
+<a href="https://www.11ty.dev/docs/languages/nunjucks/">6</a>
+<a href="https://github.com/11ty/eleventy/issues/1586">7</a>
+<a href="https://www.11ty.dev/docs/languages/markdown/">8</a>
+<a href="https://www.reddit.com/r/learnjavascript/comments/1jwl1me/is_eleventy_a_good_fit_for_a_simple_static_site/">9</a>
+<a href="https://11ty-design-tweaks.netlify.app/docs/languages/markdown/">10</a></p>
+
+    </div>
+</body>
+</html>
