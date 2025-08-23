@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {# Only use it when you want to deploy to github pages, this is the repo name #}
+    {# {% set baseUrl = "/The-Blob-Blog" %} #}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load Prism CSS -->
+    <link href="{{ "/css/themes/prism-tomorrow.css" | url }} rel="stylesheet" />
+    
+    {# use the absolute path when assigning the files to not have problems later in files. Consider the root folder is the "src" folder#}
+    <link rel="stylesheet" href="{{ "/css/style.css" | url }}>
+    <title>The Blob Blog</title>
+</head>
+<body>
+    <div class="container">
+        {{ content | safe }}
+    </div>
+
+    {# To force links to open in a new tab because GFm and MD doo not support the new tabs for security reasons #}
+    <script>
+        (function () {
+            const links = document.querySelectorAll("a[href^='http://'], a[href^='https://']");
+            const host = window.location.hostname;
+
+            const isInternalLink = (link) => {
+            try {
+                return new URL(link.href).hostname === host;
+            } catch {
+                return false;
+            }
+            };
+
+            links.forEach(link => {
+            if (!isInternalLink(link)) {
+                link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener");
+            }
+            });
+        })();
+    </script>
+
+</body>
+</html>
