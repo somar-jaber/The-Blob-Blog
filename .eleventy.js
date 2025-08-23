@@ -27,7 +27,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight);  
 
     // For fixing the absolute url problem in github pages, this is a filter. names "url"
-    pathPrefix: process.env.ELEVENTY_ENV === "production" ? "/The-Blob-Blog/" : ""
+    pathPrefix: process.env.ELEVENTY_ENV === "development" ? "" : "/The-Blob-Blog/"
 
     // Setting up what is the input and output directories 
     return {
