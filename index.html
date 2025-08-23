@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load Prism CSS -->
+    <link href="/css/themes/prism-tomorrow.css rel="stylesheet" />
+    
+    
+    <link rel="stylesheet" href="/css/style.css>
+    <title>The Blob Blog</title>
+</head>
+<body>
+    <div class="container">
+        <h1>The Blob Blog</h1>
+<p><em>we love</em> <span class="hashtag">#ComputerScience</span> <span class="hashtag">#Offline</span> <span class="hashtag">#Digital Content</span> <span class="hashtag">#Tech</span></p>
+<br>
+<br>
+<hr>
+<br>
+<h2><strong>Welcome to</strong> The Blob Blog</h2>
+<p>
+    &nbsp; &nbsp; Where we provide a technical help , advices , and suggestions
+    in the computer's and digital's world.
+</p>
+<br>
+<br>
+<br>
+<h2>The Index</h2>
+<ul>
+<li><a href="/pages/blob">What does Blob means ?</a></li>
+<li><a href="/pages/11ty/highlight-code">Highlight code in 11ty</a></li>
+<li><a href="/pages/deep-to-the-context-menu">Deep to the Context menu of directories</a></li>
+<li><a href="/pages/cs-goes-crazy">CS Goes Crazy</a></li>
+<li><a href="/pages/wallpapers-websites-for-pc">Wallpapers Websites for PC</a></li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p><strong>Made with 🖤, by Somar</strong> <br />
+<strong>Thanks for <a href="https://jamstack.org/generators/eleventy/">11ty</a> project to make this blog easy and possible.</strong>
+22/08/2025</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    </div>
+
+    
+    <script>
+        (function () {
+            const links = document.querySelectorAll("a[href^='http://'], a[href^='https://']");
+            const host = window.location.hostname;
+
+            const isInternalLink = (link) => {
+            try {
+                return new URL(link.href).hostname === host;
+            } catch {
+                return false;
+            }
+            };
+
+            links.forEach(link => {
+            if (!isInternalLink(link)) {
+                link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener");
+            }
+            });
+        })();
+    </script>
+
+</body>
+</html>

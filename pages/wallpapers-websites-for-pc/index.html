@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load Prism CSS -->
+    <link href="/css/themes/prism-tomorrow.css rel="stylesheet" />
+    
+    
+    <link rel="stylesheet" href="/css/style.css>
+    <title>The Blob Blog</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Wallpapers Websites for PC</h1>
+<p><span class="hashtag" >#Tech</span></p>
+<ul>
+<li><a href="https://wall.alphacoders.com/">Alpha Coders</a></li>
+<li><a href="https://www.wallpaperflare.com/">WallpaperFlare</a></li>
+<li><a href="https://wallpapercave.com/">WallpaperCave</a></li>
+<li><a href="https://wallpaperaccess.com/">WallpaperAccess</a></li>
+</ul>
+
+    </div>
+
+    
+    <script>
+        (function () {
+            const links = document.querySelectorAll("a[href^='http://'], a[href^='https://']");
+            const host = window.location.hostname;
+
+            const isInternalLink = (link) => {
+            try {
+                return new URL(link.href).hostname === host;
+            } catch {
+                return false;
+            }
+            };
+
+            links.forEach(link => {
+            if (!isInternalLink(link)) {
+                link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener");
+            }
+            });
+        })();
+    </script>
+
+</body>
+</html>
