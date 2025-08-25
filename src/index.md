@@ -44,7 +44,7 @@ layout : "base-layout.njk"
 
 **Made with &#128420;, by Somar** <br />
 **Thanks for [11ty](https://jamstack.org/generators/eleventy/) project to make this blog easy and possible.**
-<code>22/08/2025</code>
+<code>25/08/2025</code>
 
 <br>
 <br>
