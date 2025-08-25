@@ -6,7 +6,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 module.exports = async function(eleventyConfig) {
     // 11ty takes .html , .md and other files automatically when run but not the css and the media files, so we need to tell it to take them.
     eleventyConfig.addPassthroughCopy("./src/css/");
-    eleventyConfig.addPassthroughCopy("/src/assets");
+    eleventyConfig.addPassthroughCopy("./src/assets/");
     
     // I have subfolders in pages, 11th wasn't including them , so i added this to fix the problem
     eleventyConfig.addPassthroughCopy("/src/pages/");
