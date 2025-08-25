@@ -1,16 +1,17 @@
 ---
 layout : "base-layout.njk"
-tags: ["ComputerScience"]
 ---
 
 # Blob
 
 <span class="hashtag" >#ComputerScience</span>
-### **What is a `Blob` in JavaScript? Is it a Data Type?**  
+### **What Does `Blob` mean ?**  
 
-Yes! A **`Blob` (Binary Large Object)** is a built-in JavaScript data type used to represent raw, immutable binary data. It’s commonly used for handling files (e.g., images, PDFs) or large chunks of data in web applications.
+**`Blob` (Binary Large Object)** is a built-in programming data type in a language called JavaScript (the base of <abbr title="The current web that you now and using" >Web2</abbr>) used to represent raw, immutable binary data. It’s commonly used for handling files (e.g., images, PDFs) or large chunks of data in web applications. Also the word `/Blob/` is used to refer to a small amount or drop of something, especially a liquid; a small area of color. Sometimes to refer to a sphere of liquid floating in the air. **So**, we chose this name to represent a `Blob` *floating* in the Internet as a *spot* in the network which has a *technical* info to level up your digital life. A useful *Binary Large Object* floating in the Internet.
 
 ---
+
+## More deep in the technical side : 
 
 ### **Key Features of `Blob`**
 1. **Stores Binary Data**: Can hold text, images, audio, etc.  

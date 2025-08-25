@@ -7,3 +7,5 @@
 - When you use "tags" each tag will group it in a collection. you can access this collection by writing the "collections.tag_name" , there is also a special attribute "coolections.all" which has all the collections. 
 - 11ty has its own way to show time so you need to control it in the config file ".eleventy.js"
 - if you have a subfolders in your "pages" or "articles" folder , use "eleventyConfig.addPassthroughCopy("./src/path/to/your/folder");" to include the subfolders content.
+- use "npm run buid" then "npm run deploy" to push changes to "ph-pages" branch , and use the other git coomands like "add, commit, push" to push changes to "main" branch. 
+- the npm run build and deploy has been configured in the package.json file. 

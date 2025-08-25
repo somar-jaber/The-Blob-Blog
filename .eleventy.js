@@ -3,12 +3,13 @@ const markdownIt = require("markdown-it");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 
-module.exports = function(eleventyConfig) {
+module.exports = async function(eleventyConfig) {
     // 11ty takes .html , .md and other files automatically when run but not the css and the media files, so we need to tell it to take them.
     eleventyConfig.addPassthroughCopy("./src/css/");
-    eleventyConfig.addPassthroughCopy("./src/assets");
+    eleventyConfig.addPassthroughCopy("/src/assets");
+    
     // I have subfolders in pages, 11th wasn't including them , so i added this to fix the problem
-    eleventyConfig.addPassthroughCopy("./src/pages/");
+    eleventyConfig.addPassthroughCopy("/src/pages/");
 
     // To fix how 11ty displays time
     eleventyConfig.addFilter("postDate" , (dateObj) => {
@@ -26,8 +27,9 @@ module.exports = function(eleventyConfig) {
     // applying highlighting 
     eleventyConfig.addPlugin(syntaxHighlight);  
 
-    // For fixing the absolute url problem in github pages, this is a filter. names "url"
-    pathPrefix: process.env.ELEVENTY_ENV === "development" ? "" : "/The-Blob-Blog/"
+    // For fixing the absolute url problem in github pages, you set the "pathPrefix" in the config files or here in the end of this file.
+    const { HtmlBasePlugin } = await import("@11ty/eleventy");
+	eleventyConfig.addPlugin(HtmlBasePlugin);
 
     // Setting up what is the input and output directories 
     return {
@@ -44,3 +46,6 @@ module.exports = function(eleventyConfig) {
 }
 
 
+module.exports.config = {
+	pathPrefix: "/The-Blob-Blog/",
+}
