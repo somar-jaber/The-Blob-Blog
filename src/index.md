@@ -4,7 +4,7 @@ layout : "base-layout.njk"
 
 
 # The Blob Blog
-*we love* <span class="hashtag">#ComputerScience</span> <span class="hashtag">#Offline</span> <span class="hashtag">#Digital Content</span> <span class="hashtag">#Tech</span>
+*we love* <span class="hashtag">#ComputerScience</span> <span class="hashtag">#Offline</span> <span class="hashtag">#DigitalContent</span> <span class="hashtag">#Tech</span>
 
 <br>
 <br>
@@ -27,6 +27,7 @@ layout : "base-layout.njk"
 - [Deep to the Context menu of directories](/pages/deep-to-the-context-menu)
 - [CS Goes Crazy](/pages/cs-goes-crazy)
 - [Wallpapers Websites for PC](/pages/wallpapers-websites-for-pc)
+- [Learn Hand Sewing](/pages/learn-hand-sewing)
 
 <br>
 <br>
@@ -43,8 +44,7 @@ layout : "base-layout.njk"
 
 
 **Made with &#128420;, by Somar** <br />
-**Thanks for [11ty](https://jamstack.org/generators/eleventy/) project to make this blog easy and possible.**
-<code>25/08/2025</code>
+<code>25/08/2025</code> <code>in a middle of a rainy silent night</code>
 
 <br>
 <br>

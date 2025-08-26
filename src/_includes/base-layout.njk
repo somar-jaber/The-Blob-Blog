@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Push number 14 -->
+<!-- Push number 18 -->
 <!-- 
     Hi bro Programmer, 8 attempts needed to make it works 
     By the way what are you doing here ?
@@ -22,7 +22,14 @@
     <title>The Blob Blog</title>
 </head>
 <body>
+
     <div class="container">
+        {# This will not be applied in the home page #}
+        {% if page.url != '/' %}
+            {% include "header.njk" %}
+        {% endif %}
+        
+
         {{ content | safe }}
     </div>
 

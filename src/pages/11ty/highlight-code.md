@@ -1,10 +1,8 @@
 ---
 layout : "base-layout.njk"
+title: "Highlight code in 11th"
 tags: ["ComputerScience"]
 ---
-
-# Highlight code in 11th
-<span class="hashtag" >#ComputerScience</span>
 
 In 11ty, to get syntax highlighting for code blocks in your Markdown files, you can use an official Eleventy plugin called `@11ty/eleventy-plugin-syntaxhighlight`.
 

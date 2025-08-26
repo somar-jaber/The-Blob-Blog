@@ -1,11 +1,9 @@
 ---
 layout : "base-layout.njk"
+title: "CS Goes Crazy"
 tags: ["ComputerScience"]
 ---
 
-# CS Goes Crazy
-
-<span class="hashtag" >#ComputerScience</span>
 ## John Lin's Voxel Game :
 This man not just building a game, he built a new game engine to enhance the performance of voxel-based rendering. That what makes his game stand out, **the performance** in a voxel game , beside the very colourfull and good visuals and mechanics.
 

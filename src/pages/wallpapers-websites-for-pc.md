@@ -1,11 +1,8 @@
 ---
 layout : "base-layout.njk"
+title: "Wallpapers Websites for PC"
 tags: ["Tech"]
 ---
-
-# Wallpapers Websites for PC
-
-<span class="hashtag" >#Tech</span>
 
 - [Alpha Coders](https://wall.alphacoders.com/)
 - [WallpaperFlare](https://www.wallpaperflare.com/) 

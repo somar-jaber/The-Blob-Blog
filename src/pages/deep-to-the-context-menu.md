@@ -1,10 +1,8 @@
 ---
 layout : "base-layout.njk"
-tags: ["ComputerScience"]
+title: "Deep to the Context Menu of Directories"
+tags: ["Tech"]
 ---
-
-# Deep to the Context Menu of Directories
-<span class="hashtag" >#ComputerScience</span>
 
 in Windows when you click the `right-click` on your mouse after selecting a *Folder* or a *File* a drop-menu opens. This menu called the Context menu in Windows.
 
