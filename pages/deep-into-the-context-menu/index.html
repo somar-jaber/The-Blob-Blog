@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- Push number 18 -->
+<!-- 
+    Hi bro Programmer, 8 attempts needed to make it works 
+    By the way what are you doing here ?
+    Are you trying to steal something ? Have some morals bro.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Load Prism CSS -->
+    <link href="/The-Blob-Blog/css/themes/prism-tomorrow.css" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="/The-Blob-Blog/css/style.css">
+
+    
+    <meta name="theme-color" content="#e1e3ea">
+
+    <title>The Blob Blog</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        
+            <div class="mainTitle" style="display: flex; justify-content: space-between;">
+    <h1>Deep into the Context Menu of Directories</h1>
+    <a href="/The-Blob-Blog/" style="font-weight: normal;">home</a>
+</div>
+
+  <span class="hashtag">#Tech</span>
+
+<br>
+<br>
+
+<hr>
+<br>
+        
+        
+
+        <p>in Windows when you click the <code>right-click</code> on your mouse after selecting a <em>Folder</em> or a <em>File</em> a drop-menu opens. This menu called the Context menu in Windows.</p>
+<p>First we will start with the directories then at the end we will speak about the files. To edit the context menu we should go to one of the forbidden areas in Windows - <strong>The Registry Files</strong>.
+To edit them you need to search in your search bar for <strong>Registry Editor</strong>. Open it to see multiple main folders. The one that we need called
+<code>HKEY_CLASSES_ROOT</code> .</p>
+<p>Inside it go to <code>&gt; Directory</code> to see the folders</p>
+<pre>
+|
+|_ Background
+|_ DefaultIcon 
+|_ Shell
+|_ Shellex
+</pre>
+<p>Here this folder is where we edit the <em>Context menu</em> of folders.</p>
+<p>Now let's apply a useful experiment. We will add <strong>Open with VLC</strong> to the <em>Context menu</em> of folders. we will add it twice:</p>
+<ul>
+<li>once to open the current opened directory in VLC (<em>Where you are inside the folder</em>)</li>
+<li>once to Open the current selected folder in VLC (<em>Where you are outside the folder and already selected it by your cursor</em>)</li>
+</ul>
+<h3>Add &quot;Open with VLC&quot; to the <em>Background</em> Context Menu</h3>
+<h4>Method 1: Manual Registry Edit</h4>
+<ol>
+<li>
+<p>Open Registry Editor (Win + R → regedit → Enter).</p>
+</li>
+<li>
+<p>Navigate to:</p>
+<p><code>HKEY_CLASSES_ROOT\Directory\Background\shell</code></p>
+<p><em>(This controls the right-click menu when clicking inside a folder.)</em></p>
+</li>
+<li>
+<p>Create a new key named Open with VLC:</p>
+<ul>
+<li>Right-click shell → New → Key → Name it Open with VLC.</li>
+</ul>
+</li>
+<li>
+<p>Set the default value (optional display text):</p>
+<ul>
+<li>Double-click (Default) inside the new key and set it to Open with VLC.</li>
+</ul>
+</li>
+<li>
+<p>Add an icon (optional):</p>
+<ul>
+<li>
+<p>Right-click Open with VLC → New → String Value → Name it Icon.</p>
+</li>
+<li>
+<p>Set its value to:</p>
+<p><code>C:\Program Files\VideoLAN\VLC\vlc.exe</code>
+(<em>Note: change the directory as your program installed, it might be in <code>C:\Program Files (x86)\</code></em> )</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Create the command key:</p>
+<ul>
+<li>Right-click Open with VLC → New → Key → Name it command.</li>
+<li>Set its (Default) value to:</li>
+</ul>
+</li>
+</ol>
+<pre><code>&quot;C:\Program Files\VideoLAN\VLC\vlc.exe&quot; &quot;%V&quot;
+</code></pre>
+<p><em>(Note: %V passes the current folder path.)</em></p>
+<ol start="7">
+<li>Restart File Explorer (Task Manager → explorer.exe → Restart).</li>
+</ol>
+<h4><strong>Method 2: Use a .reg File</strong></h4>
+<ol>
+<li>
+<p>ONotepadad** and paste:</p>
+<p>Windows Registry Editor Version 5.00</p>
+<p>[HKEY_CLASSES_ROOT\Directory\Background\shell\Open with VLC]
+@=&quot;Open with VLC&quot;
+&quot;Icon&quot;=&quot;&quot;C:\Program Files\VideoLAN\VLC\vlc.exe&quot;&quot;</p>
+<p>[HKEY_CLASSES_ROOT\Directory\Background\shell\Open with VLC\command]
+@=&quot;&quot;C:\Program Files\VideoLAN\VLC\vlc.exe&quot; &quot;%V&quot;&quot;</p>
+</li>
+<li>
+<p>Save as <strong>vlc_folder_background.reg</strong>.</p>
+</li>
+<li>
+<p>Double-click theYes <strong>Yes</strong> to merge into the registry.</p>
+</li>
+<li>
+<p>File Explorerplorer** (or reboot).Why This Works Works**</p>
+</li>
+</ol>
+<ul>
+<li>Directory\Background\shell afferight-click menu inside foldersolders**.</li>
+<li>%V ensures VLC opcurrent folderfolder** (not a selected file).Troubleshootingooting**</li>
+<li>If it doesn’t work, checkVLC pathC path** (adjust if installed elsewhere, e.g., Program Files (x86))Permissionsssions** (run Registry Editor as Admin)Conflictsflicts** (use <a href="https://www.nirsoft.net/utils/shexview.html">ShellExView</a> to check for blocked entries). right-click inside any folderfol&quot;Open with VLC&quot;h VLC&quot;** should work!
+<br></li>
+</ul>
+<h3>Add &quot;Open with VLC&quot; to the for folders</h3>
+<p>Same as the above but with slightly difference.
+You go to the next directory:
+<code>HKEY_CLASSES_ROOT\Directory\shell</code>
+Instead of <code>HKEY_CLASSES_ROOT\Directory\Background\shell</code>
+and follow the same old steps, but in the key command the default string value should be :</p>
+<pre><code>&quot;C:\Program Files\VideoLAN\VLC\vlc.exe&quot; &quot;%1&quot;
+</code></pre>
+<p><strong>SO this is all for Directories (folders), if you want to edit the Background Context menu edit in</strong>
+<code>HKEY_CLASSES_ROOT\Directory\Background\shell</code>
+<strong>If you want to edit the Folder Context menu edit in</strong> <code>HKEY_CLASSES_ROOT\Directory\shell</code>
+<br>
+<br>
+<br></p>
+<hr>
+<h2>Now About Files</h2>
+<p>Most of the things are files in Windows so there is no one specific directory to edit in, it depends on what type of file you want to edit. So to edit the context menu to all the files you should edit</p>
+<pre><code>     HKEY_CLASSES_ROOT\*\shell
+</code></pre>
+<p>where the <code>*</code> means all the files. But if you want to edit the <code>.mp4</code> files type context menu :</p>
+<pre><code>   HKEY_CLASSES_ROOT\.mp4\shell
+</code></pre>
+<p><strong>So now we will see how to add Open With VLC to files with a Bonus at the end</strong>
+<br>
+<br></p>
+<h3>Add Open with VLC to Files :</h3>
+<p>To add &quot;Open with VLC&quot; to the right-click context menu for individual files (like videos, music, etc.), you can modify the registry to include VLC in the context menu for all files or specific file types. Here’s how:</p>
+<hr>
+<h3>Method 1: Add &quot;Open with VLC&quot; for All Files</h3>
+<p>This will make the option appear when right-clicking any file (not just media files).</p>
+<h4>Steps:</h4>
+<ol>
+<li>
+<p>Open Registry Editor</p>
+<ul>
+<li>Press Win + R, type regedit, and hit Enter.</li>
+</ul>
+</li>
+<li>
+<p>Navigate to the File Context Menu Key</p>
+<ul>
+<li>Go to:</li>
+</ul>
+<pre class="language-cmd"><code class="language-cmd">  HKEY_CLASSES_ROOT\*\shell</code></pre>
+<ul>
+<li><em>(This applies to all file types.)</em></li>
+</ul>
+</li>
+<li>
+<p>Create a New Key for VLC</p>
+<ul>
+<li>Right-click shell → New → Key → Name it Open with VLC.</li>
+<li><em>(Optional)</em> To add an icon:
+<ul>
+<li>
+<p>Right-click the Open with VLC key → New → String Value → Name it Icon.</p>
+</li>
+<li>
+<p>Set its value to:</p>
+<p><code>&quot;C:\Program Files\VideoLAN\VLC\vlc.exe&quot;</code></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Add the Command</p>
+<ul>
+<li>
+<p>Right-click Open with VLC → New → Key → Name it command.</p>
+</li>
+<li>
+<p>Double-click the (Default) value inside command and set it to:</p>
+<p><code>&quot;C:\Program Files\VideoLAN\VLC\vlc.exe&quot; &quot;%1&quot;</code></p>
+<p><em>(Adjust the path if VLC is installed elsewhere.)</em></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Restart File Explorer</p>
+<ul>
+<li>Open Task Manager (Ctrl + Shift + Esc), find Windows Explorer, and restart it.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3>Method 2: Add &quot;Open with VLC&quot; for Specific File Types (e.g., .mp4, .mkv)</h3>
+<p>If you only want VLC to appear for video files, target specific extensions (e.g., .mp4, .mkv).</p>
+<h4>**Example for .mp4 Files:<strong>Open Registry Editoror</strong> (regedit).</h4>
+<ol start="2">
+<li>Navigate to:</li>
+</ol>
+<pre class="language-cmd"><code class="language-cmd">   HKEY_CLASSES_ROOT\.mp4\shell</code></pre>
+<p><em>(If .mp4 doesn’t have a shell key, create one.)</em><br>
+3. Follow the same stepsMethod 1 1** to create Open with VLC and command keys.<br>
+4. Restart File Explorer.</p>
+<hr>
+<h3><strong>Method 3: Use a .reg File (Quick Setup)</strong></h3>
+<p>Copy to Notepadotepad and paste:</p>
+<pre class="language-shell"><code class="language-shell">   Windows Registry Editor Version <span class="token number">5.00</span>
+
+   <span class="token punctuation">[</span>HKEY_CLASSES_ROOT<span class="token punctuation">\</span>*<span class="token punctuation">\</span>shell<span class="token punctuation">\</span>Open with VLC<span class="token punctuation">]</span>
+   @<span class="token operator">=</span><span class="token string">"Open with VLC"</span>
+   <span class="token string">"Icon"</span><span class="token operator">=</span><span class="token string">"<span class="token entity" title="\&quot;">\"</span>C:<span class="token entity" title="\\">\\</span>Program Files<span class="token entity" title="\\">\\</span>VideoLAN<span class="token entity" title="\\">\\</span>VLC<span class="token entity" title="\\">\\</span>vlc.exe<span class="token entity" title="\&quot;">\"</span>"</span>
+
+   <span class="token punctuation">[</span>HKEY_CLASSES_ROOT<span class="token punctuation">\</span>*<span class="token punctuation">\</span>shell<span class="token punctuation">\</span>Open with VLC<span class="token punctuation">\</span>command<span class="token punctuation">]</span>
+   @<span class="token operator">=</span><span class="token string">"<span class="token entity" title="\&quot;">\"</span>C:<span class="token entity" title="\\">\\</span>Program Files<span class="token entity" title="\\">\\</span>VideoLAN<span class="token entity" title="\\">\\</span>VLC<span class="token entity" title="\\">\\</span>vlc.exe<span class="token entity" title="\&quot;">\"</span> <span class="token entity" title="\&quot;">\"</span>%1<span class="token entity" title="\&quot;">\"</span>"</span></code></pre>
+<ol start="2">
+<li>Save as <strong>vlc_file_context.reg</strong> (select <strong>&quot;All Files&quot;</strong> as the type).</li>
+<li>Double-cYese file → <strong>Yes</strong> to merge into the registrFile Explorer*File ExplorTroubleshootingrouOption doesn’t appear?oesn’t appear?**</li>
+</ol>
+<ul>
+<li>Ensure the registry path is correct (e.g., HKEY_CLASSES_ROOT*\shell for all fiRegistry Editor as Administrator AdminVLC doesn’t open the file?open the file?**</li>
+<li>Check if the file path in the registry is correct (e.g., Program Files (x86) for 32-bit VLC).</li>
+<li>Reinstall VLC if the executable is corruptBonus: Add &quot;Add to VLC Playlist&quot; VLC Playlist&quot;<strong>queue files in VLCe files in VLC</strong> instead of opening them immediately, modify the command to:
+&quot;C:\Program Files\VideoLAN\VLC\vlc.exe&quot; --started-from-file --playlist-enqueue &quot;%1&quot;</li>
+</ul>
+
+    </div>
+
+    
+    <script>
+        (function () {
+            const links = document.querySelectorAll("a[href^='http://'], a[href^='https://']");
+            const host = window.location.hostname;
+
+            const isInternalLink = (link) => {
+            try {
+                return new URL(link.href).hostname === host;
+            } catch {
+                return false;
+            }
+            };
+
+            links.forEach(link => {
+            if (!isInternalLink(link)) {
+                link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener");
+            }
+            });
+        })();
+    </script>
+
+</body>
+</html>
