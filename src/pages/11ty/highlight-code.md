@@ -1,6 +1,6 @@
 ---
 layout : "base-layout.njk"
-title: "Highlight code in 11th"
+title: "Highlight code in 11ty"
 tags: ["ComputerScience"]
 ---
 

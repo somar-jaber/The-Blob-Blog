@@ -1,6 +1,6 @@
 ---
 layout : "base-layout.njk"
-title: "Deep to the Context Menu of Directories"
+title: "Deep into the Context Menu of Directories"
 tags: ["Tech"]
 ---
 

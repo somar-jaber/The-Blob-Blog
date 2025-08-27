@@ -24,10 +24,11 @@ layout : "base-layout.njk"
 ## The Index
 - [What Does Blob Mean ?](/pages/blob)
 - [Highlight code in 11ty](/pages/11ty/highlight-code)
-- [Deep to the Context menu of directories](/pages/deep-to-the-context-menu)
+- [Deep into the Context menu of directories](/pages/deep-into-the-context-menu)
 - [CS Goes Crazy](/pages/cs-goes-crazy)
 - [Wallpapers Websites for PC](/pages/wallpapers-websites-for-pc)
 - [Learn Hand Sewing](/pages/learn-hand-sewing)
+
 
 <br>
 <br>
@@ -44,7 +45,7 @@ layout : "base-layout.njk"
 
 
 **Made with &#128420;, by Somar** <br />
-<code>25/08/2025</code> <code>in a middle of a rainy silent night</code>
+<code>25/08/2025</code> <code>In the middle of a rainy, silent night</code>
 
 <br>
 <br>
