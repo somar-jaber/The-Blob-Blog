@@ -27,11 +27,9 @@
         
         
             <div class="mainTitle" style="display: flex; justify-content: space-between;">
-    <h1>Wallpapers Websites for PC</h1>
+    <h1>TestPage</h1>
     <a href="/The-Blob-Blog/" style="font-weight: normal;">home</a>
 </div>
-
-    <span class="hashtag">#Tech</span>
 
 <br>
 <br>
@@ -40,12 +38,34 @@
         
         
 
-        <ul>
-<li><a href="https://wall.alphacoders.com/">Alpha Coders</a></li>
-<li><a href="https://www.wallpaperflare.com/">WallpaperFlare</a></li>
-<li><a href="https://wallpapercave.com/">WallpaperCave</a></li>
-<li><a href="https://wallpaperaccess.com/">WallpaperAccess</a></li>
-</ul>
+        <div class="youtube-video">
+    <img src="/The-Blob-Blog/assets/images/building-a-startup-in-your-20s.jpg">
+<p></p><div class="text">
+<h4><a style="color: var(--text-color);" href="https://www.youtube.com/watch?v=IGK0wYXebmc">Title</a></h4>
+<p>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quaerat velit necessitatibus itaque sed temporibus ullam corrupti, similique minus quia officia modi animi accusamus.
+</p>
+</div><p></p>
+</div>
+<br>
+<br>
+<div class="youtube-video">
+    <img src="/The-Blob-Blog/assets/images/videoImage2.jpg">
+<p></p><div class="text">
+<h4><a style="color: var(--text-color);" href="https://www.youtube.com/watch?v=IGK0wYXebmc">tournament</a></h4>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab omnis et itaque consequatur recusandae temporibus.
+</p>
+</div><p></p>
+</div>  
+<h3>Pass Parameters To The njk File</h3>
+<p>let's say you have the <code>targetPage</code> which will displays the template
+and you have the <code>Template1</code> which is the template.
+You write in the <code>targetPage</code></p>
+<pre class="language-cmd"><code class="language-cmd">{% set parameters = {"title": "tournament", "imageLink" : "/path/to/image.jpg"} %}
+{% include 'youtube-element.njk' %}</code></pre>
+<p>and then access those parameters in the <code>Template1</code>:</p>
+<pre class="language-cmd"><code class="language-cmd">{{parameters.Parameter_Name}}</code></pre>
 
     </div>
 

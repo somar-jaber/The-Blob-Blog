@@ -56,6 +56,20 @@ a {
 a:hover {
     color: var(--link-hover-color);
 }
+a::after {
+    content: "";
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: -10px; */
+    /* border-right: 2px solid var(--bold-link-color); */
+    transition: 0.3S ease-in-out;
+}
+a:hover:after {
+    content: "♠♣♥♦→";
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
 
 h1 {
     color: var(--heading-color);
@@ -121,4 +135,33 @@ code {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+}
+
+
+/* Elements */
+.youtube-video {
+    display: flex;
+    justify-content: space-between;
+    border: #9b9b9b solid 1px;
+}
+
+.youtube-video img {
+    width: 320px;
+    height: 180px;
+    margin-right: 20px;
+}
+
+.youtube-video .text {
+    padding: 2px;
+    height: 180px;
+    overflow-y: scroll;
+}
+
+.youtube-video h4 {
+    margin: 10px;
+}
+
+.youtube-video p {
+    margin: 0px;
 }
