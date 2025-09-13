@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Push number 27 -->
+<!-- 
+    Hi bro Programmer, 8 attempts needed to make it works 
+    By the way what are you doing here ?
+    Are you trying to steal something ? Have some morals bro.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Load Prism CSS -->
+    <link href="/The-Blob-Blog/css/themes/prism-tomorrow.css" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="/The-Blob-Blog/css/style.css">
+
+    
+    <meta name="theme-color" content="#e1e3ea">
+
+    <title>The Blob Blog</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        
+            <div class="mainTitle" style="display: flex; justify-content: space-between;">
+    <h1>Take High Resolution Screenshots</h1>
+    <a href="/The-Blob-Blog/" style="font-weight: normal;">home</a>
+</div>
+
+    <span class="hashtag">#Tech</span>
+
+<br>
+<br>
+<hr>
+<br>
+        
+        
+
+        <h3>When you take a screenshot of a movie, it often appears blurry due to several factors:</h3>
+<ol>
+<li>
+<p>Compression and Encoding: Movies are heavily compressed to reduce file size, which can result in a loss of detail. This compression is optimized for playback, not for capturing still images.</p>
+</li>
+<li>
+<p>Resolution Mismatch: If the movie's resolution is lower than your screen's resolution, the screenshot will appear blurry when viewed at full size. For example, if the movie is 1080p but your screen is 4K, the image will be upscaled and lose sharpness.</p>
+</li>
+<li>
+<p>Interlacing or Deinterlacing Issues: Some videos, especially older ones, use interlacing, which can cause blurring or artifacts when capturing a still frame.</p>
+</li>
+<li>
+<p>Player Settings: The video player you're using might not be rendering the video at its full quality. Some players apply post-processing effects or scale the video, which can reduce sharpness.</p>
+</li>
+<li>
+<p>Motion Blur: Movies often have motion blur due to fast-moving scenes or low frame rates, which can make screenshots look less sharp.</p>
+</li>
+</ol>
+<h3>How to Take High-Resolution Screenshots:</h3>
+<ol>
+<li>
+<p>Use a Dedicated Tool: Use software designed for capturing high-quality screenshots from videos, such as <a href="https://images.videolan.org/vlc/">VLC Media Player</a>, <a href="https://www.google.com/search?q=MPC-HC&amp;sourceid=chrome&amp;ie=UTF-8">MPC-HC</a>, or specialized tools like <a href="https://potplayer.daum.net/">PotPlayer</a>. These tools can extract frames directly from the video file without losing quality.</p>
+</li>
+<li>
+<p>Disable Hardware Acceleration <strong>( Not advisable for normal users )</strong>: In your video player settings, turn off hardware acceleration. This ensures the video is rendered in its original quality, which can improve screenshot clarity.</p>
+</li>
+<li>
+<p>Pause at the Right Moment: Pause the video at a scene with minimal motion to avoid motion blur.</p>
+</li>
+<li>
+<p>Extract Frames Directly <strong>( For Programmers )</strong> : Use tools like FFmpeg or specialized software to extract frames directly from the video file. This bypasses any rendering issues from the player.</p>
+</li>
+<li>
+<p>Check Video Resolution: Ensure the movie file itself is high resolution (e.g., 1080p or 4K). If the source is low quality, the screenshot will also be low quality.</p>
+</li>
+</ol>
+<p>By following these steps, you should be able to capture high-resolution screenshots from your movie.</p>
+
+    </div>
+
+    
+    <script>
+        (function () {
+            const links = document.querySelectorAll("a[href^='http://'], a[href^='https://']");
+            const host = window.location.hostname;
+
+            const isInternalLink = (link) => {
+            try {
+                return new URL(link.href).hostname === host;
+            } catch {
+                return false;
+            }
+            };
+
+            links.forEach(link => {
+            if (!isInternalLink(link)) {
+                link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener");
+            }
+            });
+        })();
+    </script>
+
+</body>
+</html>
