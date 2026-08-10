@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!-- Push number 51 -->
+<!-- 
+    Hi bro Programmer, 8 attempts needed to make it works 
+    By the way what are you doing here ?
+    Are you trying to steal something ? Have some morals bro.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/the-blob-blog/assets/favicon.png">
+
+    <!-- Load Prism CSS -->
+    <link href="/the-blob-blog/css/themes/prism-tomorrow.css" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="/the-blob-blog/css/style.css">
+
+    
+    <meta name="theme-color" content="#E8E3DF">
+    
+    <title>The Blob Blog</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        
+            <div class="mainTitle" style="display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center; gap: 10px;">
+    <h1 style="overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; flex: 1; min-width: 0; margin: 0;">
+        PC Games
+    </h1>
+    <a href="/the-blob-blog/" style="font-weight: normal; flex-shrink: 0;">home</a>
+</div>
+
+    <a href="/the-blob-blog/pages/collections/digitalcontent/" class="hashtag">#DigitalContent</a>
+
+<br>
+<br>
+<hr>
+<br>
+        
+        
+
+        <style>
+    .game-card { display: block; padding: 10px; /*border-bottom: 1px solid #ccc;*/ }
+    .hidden { display: none; }
+    #tag-filters { display: flex; flex-wrap: wrap; gap: 10px; padding: 10px 0; align-items: center;}
+    .hashtag { margin-bottom: 0px; }
+    /* .filter-btn { margin: 5px; padding: 8px 16px; cursor: pointer; } */
+    .filter-btn.active { background: var(--bold-link-color, blue); color: white; }
+    hr { margin-bottom: 13px; }
+</style>
+<p>We have a very specific taste in games. We are from the 2000s gamers generation, where the gaming industry was at its peak.
+So every game you will see its name here is a game that deserve to be played or searched about at least.</p>
+<p><a href="/the-blob-blog/pages/pc-games">Expanded vision</a></p>
+<!-- Looping on all tags in the games and making the All tags array --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><!-- concat() merges an array into another --><br>
+<br>
+<br>
+<div id="filter-container">
+    <h2>Filter</h2>
+  <!-- Tag filter buttons -->
+  <div id="tag-filters">
+    <span class="filter-btn active hashtag" data-tag="all">All Games</span><span class="filter-btn hashtag" data-tag="RTS">RTS</span><span class="filter-btn hashtag" data-tag="Classic">Classic</span><span class="filter-btn hashtag" data-tag="Macro-Focused">Macro-Focused</span><span class="filter-btn hashtag" data-tag="Tactical">Tactical</span><span class="filter-btn hashtag" data-tag="Strategy">Strategy</span><span class="filter-btn hashtag" data-tag="Management">Management</span><span class="filter-btn hashtag" data-tag="Cozy">Cozy</span><span class="filter-btn hashtag" data-tag="Adventure">Adventure</span><span class="filter-btn hashtag" data-tag="Wholesome">Wholesome</span><span class="filter-btn hashtag" data-tag="Life Simulation">Life Simulation</span><span class="filter-btn hashtag" data-tag="Farming">Farming</span><span class="filter-btn hashtag" data-tag="Platformer">Platformer</span><span class="filter-btn hashtag" data-tag="Puzzle">Puzzle</span><span class="filter-btn hashtag" data-tag="Exploration">Exploration</span><span class="filter-btn hashtag" data-tag="RPG">RPG</span><span class="filter-btn hashtag" data-tag="Narrative">Narrative</span><span class="filter-btn hashtag" data-tag="Comedy">Comedy</span><span class="filter-btn hashtag" data-tag="Simulation">Simulation</span><span class="filter-btn hashtag" data-tag="Horror">Horror</span><span class="filter-btn hashtag" data-tag="Sandbox">Sandbox</span><span class="filter-btn hashtag" data-tag="Crafting">Crafting</span><span class="filter-btn hashtag" data-tag="Survival">Survival</span><span class="filter-btn hashtag" data-tag="Shooter">Shooter</span><span class="filter-btn hashtag" data-tag="Sci-Fi">Sci-Fi</span><span class="filter-btn hashtag" data-tag="Action">Action</span><span class="filter-btn hashtag" data-tag="Stealth">Stealth</span><span class="filter-btn hashtag" data-tag="Mystery">Mystery</span><span class="filter-btn hashtag" data-tag="Legendary">Legendary</span><span class="filter-btn hashtag" data-tag="Movie-based">Movie-based</span><span class="filter-btn hashtag" data-tag="Couch Co-op">Couch Co-op</span><span class="filter-btn hashtag" data-tag="Co-op">Co-op</span><span class="filter-btn hashtag" data-tag="PS1">PS1</span></div>
+  <br>
+  <br>
+  <!-- Game cards -->
+  <ul id="game-list"><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>Generals Zero Hour (Contra Mod)</b></li><p></p></div><div class="game-card" data-tags="RTS,Classic">
+        <!-- game name --><li><b>Warcraft III</b></li><p></p><img src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/warcraftiii.png"></div><div class="game-card" data-tags="RTS,Macro-Focused">
+        <!-- game name --><li><b>StarCraft 2: Trilogy</b></li><p></p><img src="https://images.gog.com/51c804e6093b0b8494c7956adb13a3f187fdc879630569c8fb466fd2b7fadea1_glx_vertical_cover.webp?namespace=gamesdb"></div><div class="game-card" data-tags="RTS,Tactical,Macro-Focused">
+        <!-- game name --><li><b>Iron Harvest</b></li><p></p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>DEFCON Zero</b></li><p></p><img src="/the-blob-blog/assets/gamesimages/defcon_zero.jpg"></div><div class="game-card" data-tags="RTS,Classic">
+        <!-- game name --><li><b>Warhammer 40k : Dawn of War I Soulstorm &amp; I definitive Edition &amp; III</b></li><p></p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>Warhammer 40k : Dawn of War II </b></li><p>Comes with expansions, Chaos Rising and Retribution. It doesn’t have a base building part, but it has a very cool and unique system forcing you to engage with the world, it has skirmish mod in the multiplayer menu, just add AI players and play.</p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>Dust Front RTS </b></li><p></p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>Company of heroes 2 &amp; 3</b></li><p></p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>ZeroSpace</b></li><p></p><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1605850/5259105134f303692a1f160e79264b05b803f0b0/header.jpg?t=1785798364"></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>Total War: Warhammer III</b></li><p></p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>Total War: Rome 2</b></li><p></p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>World in Conflict</b></li><p></p></div><div class="game-card" data-tags="RTS,Classic">
+        <!-- game name --><li><b>Red Alert 2 &amp; 3</b></li><p></p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>Supreme Commander</b></li><p></p></div><div class="game-card" data-tags="RTS,Classic">
+        <!-- game name --><li><b>Total Inhalation</b></li><p></p></div><div class="game-card" data-tags="RTS,Classic">
+        <!-- game name --><li><b>Outlive 25</b></li><p></p></div><div class="game-card" data-tags="RTS,Classic">
+        <!-- game name --><li><b>Age of Empires II &amp; III &amp; definitive edition</b></li><p></p></div><div class="game-card" data-tags="RTS,Classic">
+        <!-- game name --><li><b>Age of Mythology</b></li><p>There are a remaster version called Age of Mythology Retold</p></div><div class="game-card" data-tags="RTS,Classic">
+        <!-- game name --><li><b>Strong Hold : Crusader &amp; definitive edition</b></li><p></p></div><div class="game-card" data-tags="RTS,Classic">
+        <!-- game name --><li><a href="/the-blob-blog/pages/bfme-ii/" target="_blank">Lord of the rings : The Battle of the Middle-Earth I &amp; II with RoWK DLC</a></li><p></p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>Hearts Of Iron IV</b></li><p></p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>Knights of Honor II: Sovereign</b></li><p></p><img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/736820/ss_0f0b4724fe6b986ee5365fa271368ae0e4aa6a71.1920x1080.jpg?t=1725000879"></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>Side Meier’s Civilization VII </b></li><p></p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/3338950/The_Scouring/" target="_blank">The Scouring!</a></li><p>Warcraft successor</p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>Systemic War</b></li><p></p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/3511540/Veil_of_Ashes/" target="_blank">Veil of Ashes</a></li><p></p></div><div class="game-card" data-tags="RTS">
+        <!-- game name --><li><b>Sudden Strike 5</b></li><p></p></div><div class="game-card" data-tags="RTS,Classic">
+        <!-- game name --><li><b>D.O.R.F</b></li><p></p></div><div class="game-card" data-tags="">
+        <!-- game name --><li><b>Kingdom two crowns</b></li><p></p></div><div class="game-card" data-tags="">
+        <!-- game name --><li><b>Tinkernest</b></li><p></p></div><div class="game-card" data-tags="Strategy,Management,Cozy,Adventure">
+        <!-- game name --><li><b>Kingdom Two Crowns</b></li><p>A 2D sidescrolling micro-strategy game where you build and defend your kingdom with a monarch.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/701160/header.jpg"></div><div class="game-card" data-tags="Adventure,Cozy,Wholesome">
+        <!-- game name --><li><b>Tinkernest</b></li><p>A cozy indie game showcased at Wholesome Direct 2026.</p></div><div class="game-card" data-tags="Life Simulation,Adventure,Cozy,Wholesome">
+        <!-- game name --><li><b>Moonlight Peaks</b></li><p>A magical life-simulation game where you play as a vampire chef.</p></div><div class="game-card" data-tags="Adventure,Cozy,Wholesome">
+        <!-- game name --><li><b>In The Drift</b></li><p>A cozy indie game about drifting through life and nature.</p></div><div class="game-card" data-tags="Adventure,Cozy,Wholesome">
+        <!-- game name --><li><b>Capy Castaway</b></li><p>A relaxing survival game featuring a capybara building a home on a tropical island.</p></div><div class="game-card" data-tags="Farming,Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><b>Fourleaf Fields</b></li><p>A cozy farming and life-simulation game.</p></div><div class="game-card" data-tags="Adventure,Cozy,Wholesome">
+        <!-- game name --><li><b>Spiritstead</b></li><p>A cozy game about building a homestead with spirits.</p></div><div class="game-card" data-tags="Adventure,Cozy,Wholesome">
+        <!-- game name --><li><b>Moomin: Midsummer Madness</b></li><p>A wholesome adventure set in the beloved Moomin universe.</p></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Wholesome">
+        <!-- game name --><li><b>Planet of Lana</b></li><p>A cinematic puzzle-platformer about a girl and her animal companion saving their planet.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1608230/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Wholesome">
+        <!-- game name --><li><b>Planet of Lana 2</b></li><p>The sequel to the cinematic puzzle-platformer.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/2997230/header.jpg"></div><div class="game-card" data-tags="Adventure,Exploration,Cozy">
+        <!-- game name --><li><b>Abzu</b></li><p>A meditative underwater exploration game where you swim through vibrant ocean worlds.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/384190/header.jpg"></div><div class="game-card" data-tags="Farming,Life Simulation,Cozy,Wholesome,Adventure">
+        <!-- game name --><li><b>Stardew Valley</b></li><p>A beloved farming simulation game where you restore a farm and build a community.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/413150/header.jpg"></div><div class="game-card" data-tags="Farming,Life Simulation,Cozy,Wholesome,Adventure">
+        <!-- game name --><li><b>Haunted Chocolatier</b></li><p>An upcoming RPG from the creator of Stardew Valley where you run a chocolate shop in a haunted castle.</p></div><div class="game-card" data-tags="Life Simulation,RPG,Cozy,Wholesome,Adventure">
+        <!-- game name --><li><b>Witchbrook</b></li><p>A magical life-simulation RPG about a witch attending a wizard school.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1846700/header.jpg"></div><div class="game-card" data-tags="Adventure,Narrative,Exploration">
+        <!-- game name --><li><b>Firewatch</b></li><p>A first-person mystery adventure set in the Wyoming wilderness.</p></div><div class="game-card" data-tags="Adventure,Comedy,Puzzle,Wholesome">
+        <!-- game name --><li><b>Untitled Goose Game</b></li><p>A slapstick stealth game where you play as a mischievous goose.</p></div><div class="game-card" data-tags="Management,Simulation,Cozy,Adventure">
+        <!-- game name --><li><a href="https://store.steampowered.com/bundle/59015/Town_to_City_Deluxe/" target="_blank">Town to City</a></li><p>A city-building simulation game where you grow a small town into a thriving city.</p></div><div class="game-card" data-tags="Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/3767320/Animula_Nook/" target="_blank">Animula Nook</a></li><p>A cozy simulation game about caring for creatures in a magical nook.</p></div><div class="game-card" data-tags="Puzzle,Cozy,Wholesome">
+        <!-- game name --><li><b>Whisper of the House</b></li><p>A cozy puzzle game where you arrange furniture and uncover memories.</p></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Wholesome">
+        <!-- game name --><li><b>Little Big Planet 1 &amp; 2</b></li><p>A creative puzzle-platformer series featuring Sackboy.</p></div><div class="game-card" data-tags="Adventure,Exploration,Narrative,Cozy">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/695330/SEASON_A_letter_to_the_future/" target="_blank">SEASON: A Letter to the Future</a></li><p>A meditative exploration game where you document the world before a cataclysm.</p></div><div class="game-card" data-tags="Adventure,Puzzle,Cozy">
+        <!-- game name --><li><b>Machinarium</b></li><p>A charming point-and-click puzzle adventure set in a robot world.</p></div><div class="game-card" data-tags="Adventure,Puzzle,Cozy,Wholesome">
+        <!-- game name --><li><b>Botanicula</b></li><p>A whimsical point-and-click adventure about tiny creatures saving a tree.</p></div><div class="game-card" data-tags="Adventure,Comedy,Puzzle,Wholesome">
+        <!-- game name --><li><b>Chuchel</b></li><p>A funny and chaotic point-and-click adventure about a hairy creature.</p></div><div class="game-card" data-tags="Adventure,Puzzle,Horror">
+        <!-- game name --><li><b>Happy Game</b></li><p>A surreal and disturbing puzzle-adventure with nightmare-fuel visuals.</p></div><div class="game-card" data-tags="Adventure,Puzzle,Comedy,Cozy">
+        <!-- game name --><li><b>Pilgrims</b></li><p>A playful card-based adventure game with quirky characters.</p></div><div class="game-card" data-tags="Adventure,Puzzle,Cozy">
+        <!-- game name --><li><b>Creaks</b></li><p>A hand-painted puzzle adventure with eerie atmosphere.</p></div><div class="game-card" data-tags="Adventure,Puzzle,Cozy">
+        <!-- game name --><li><b>Phonopolis</b></li><p>An upcoming stop-motion puzzle adventure set in a totalitarian city.</p></div><div class="game-card" data-tags="Adventure,Puzzle,Cozy,Wholesome">
+        <!-- game name --><li><b>Questionaut</b></li><p>A charming educational point-and-click adventure.</p></div><div class="game-card" data-tags="Adventure,Cozy,Wholesome">
+        <!-- game name --><li><b>The Quest For The Rest</b></li><p>A cozy web-based adventure game.</p></div><div class="game-card" data-tags="Adventure,Narrative,Comedy">
+        <!-- game name --><li><b>The Stanley Parable: Deluxe Edition</b></li><p>A surreal narrative-driven game that plays with player choice.</p></div><div class="game-card" data-tags="Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><a href="https://www.zlincity.com/" target="_blank">ZlinCity</a></li><p>An upcoming cozy life-simulation game set in a charming city.</p></div><div class="game-card" data-tags="Adventure,Cozy,Wholesome">
+        <!-- game name --><li><b>Cast n Chill</b></li><p>A relaxing game about fishing, collecting, and chilling out.</p></div><div class="game-card" data-tags="Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><b>Tiny Pasture</b></li><p>A cute simulation game with adorable animals at the bottom of your screen.</p></div><div class="game-card" data-tags="Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><b>Cozy Island</b></li><p>A cozy island life-simulation game.</p></div><div class="game-card" data-tags="Sandbox,Cozy,Wholesome">
+        <!-- game name --><li><b>Tiny Glade</b></li><p>A relaxing sandbox game where you build charming castles and landscapes.</p></div><div class="game-card" data-tags="Sandbox,Cozy,Wholesome">
+        <!-- game name --><li><b>Summer House</b></li><p>A solo-developed cozy game about spending a relaxing summer at a house.</p></div><div class="game-card" data-tags="Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/3621690/My_Eerie_Lair/" target="_blank">My Eerie Lair</a></li><p>A cozy spooky simulation game where you manage a lair as a monster.</p></div><div class="game-card" data-tags="RPG,Horror,Narrative,Adventure">
+        <!-- game name --><li><b>Omori</b></li><p>A surreal psychological horror RPG with deeply emotional storytelling.</p></div><div class="game-card" data-tags="Adventure,Horror,Narrative">
+        <!-- game name --><li><b>Buddy Simulator 1984</b></li><p>A horror-adventure game where an AI companion learns from you.</p></div><div class="game-card" data-tags="Adventure,Narrative,Horror">
+        <!-- game name --><li><b>Little Misfortune</b></li><p>A dark interactive story about a girl seeking a magic gem.</p></div><div class="game-card" data-tags="Adventure,Cozy,Wholesome">
+        <!-- game name --><li><b>Moon Frost</b></li><p>An upcoming cozy game with beautiful pixel art.</p></div><div class="game-card" data-tags="Management,Adventure,Cozy,Wholesome">
+        <!-- game name --><li><b>Bear and Breakfast</b></li><p>A management adventure game where you run a B&amp;B as a bear.</p></div><div class="game-card" data-tags="Farming,Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><b>Wylde Flowers</b></li><p>A fully voice-acted farming game with witches and magic.</p></div><div class="game-card" data-tags="Farming,Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><b>Coral Island</b></li><p>A tropical farming and life-simulation game with underwater exploration.</p></div><div class="game-card" data-tags="Strategy,Simulation,Cozy,Adventure">
+        <!-- game name --><li><b>Masters of Albion</b></li><p>A god-like simulation game where you build and manage a fantasy world.</p></div><div class="game-card" data-tags="RPG,Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><b>Songs of Glimmerwick</b></li><p>A magical cozy RPG about attending a music-based magic academy.</p></div><div class="game-card" data-tags="Adventure,Exploration,Cozy,Wholesome">
+        <!-- game name --><li><b>Eastshade</b></li><p>A first-person exploration game where you paint landscapes.</p></div><div class="game-card" data-tags="Adventure,Narrative,Cozy,Wholesome">
+        <!-- game name --><li><b>Harold Halibut</b></li><p>A handcrafted stop-motion narrative game set in an underwater city.</p></div><div class="game-card" data-tags="Strategy,Adventure,Cozy,Wholesome">
+        <!-- game name --><li><b>Pikmin Series</b></li><p>A real-time strategy adventure where you command plant-like creatures.</p></div><div class="game-card" data-tags="Strategy,Puzzle,Cozy,Wholesome">
+        <!-- game name --><li><b>Terra Nil</b></li><p>A reverse city-builder where you restore barren landscapes to ecosystems.</p></div><div class="game-card" data-tags="Farming,Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><b>Littlewood</b></li><p>A cozy farming RPG set in a peaceful world after the hero has saved it.</p></div><div class="game-card" data-tags="Farming,Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><b>Fields of Mistria</b></li><p>A 90s anime-inspired farming RPG with magic and romance.</p></div><div class="game-card" data-tags="Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><b>Calico</b></li><p>A cute cafe-management game where you decorate your cat cafe.</p></div><div class="game-card" data-tags="Cozy,Wholesome">
+        <!-- game name --><li><b>Spirit City: Lo-fi Sessions</b></li><p>A productivity game with lo-fi beats, where you study in a cozy virtual room.</p></div><div class="game-card" data-tags="Management,Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><b>Travelers Rest</b></li><p>A tavern management game where you brew drinks and serve travelers.</p></div><div class="game-card" data-tags="Adventure,Crafting,Cozy,Wholesome">
+        <!-- game name --><li><b>Wytchwood</b></li><p>A crafting adventure set in a fairy-tale world where you play as a witch.</p></div><div class="game-card" data-tags="Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><b>inZoi</b></li><p>A life-simulation game with hyper-realistic graphics, similar to The Sims.</p></div><div class="game-card" data-tags="Adventure,Farming,Cozy,Wholesome">
+        <!-- game name --><li><b>Littlelands</b></li><p>A cozy exploration and farming game with charming hand-drawn visuals.</p></div><div class="game-card" data-tags="Management,Cozy,Wholesome">
+        <!-- game name --><li><b>Go Go Town</b></li><p>A town-building simulation game where you restore and manage a small town.</p></div><div class="game-card" data-tags="Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><b>Cozy Grove</b></li><p>A hand-drawn life-simulation game where you help ghosts on a haunted island.</p></div><div class="game-card" data-tags="Adventure,Cozy,Wholesome">
+        <!-- game name --><li><b>Hello Kitty Island Adventure</b></li><p>A cozy open-world game with Hello Kitty and friends on a tropical island.</p></div><div class="game-card" data-tags="Life Simulation,Cozy,Wholesome">
+        <!-- game name --><li><b>Disney Dreamlight Valley</b></li><p>A life-simulation game where you befriend Disney characters and restore a magical valley.</p></div><div class="game-card" data-tags="Farming,RPG,Cozy,Wholesome">
+        <!-- game name --><li><b>Sun Haven</b></li><p>A fantasy farming RPG with magic, multiple races, and adventure across dimensions.</p></div><div class="game-card" data-tags="Farming,RPG,Cozy,Wholesome">
+        <!-- game name --><li><b>Rune Factory 4 Special</b></li><p>A fantasy farming RPG with combat, romance, and a charming Wii-era vibe.</p></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Horror">
+        <!-- game name --><li><b>Inside</b></li><p>A dark, cinematic puzzle-platformer where a boy navigates a dystopian world filled with deadly secrets.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/304430/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,RPG,Exploration">
+        <!-- game name --><li><b>Hollow Knight</b></li><p>A challenging action-adventure game set in a vast, interconnected underground kingdom of insects.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/367520/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Wholesome">
+        <!-- game name --><li><b>Ori and the Blind Forest</b></li><p>A visually stunning platformer where a guardian spirit embarks on a journey to save a dying forest.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/261570/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Wholesome">
+        <!-- game name --><li><b>Ori and the Will of the Wisps</b></li><p>The sequel to Ori and the Blind Forest, featuring expanded combat and exploration in a beautiful world.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1057090/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,Exploration,Survival">
+        <!-- game name --><li><b>Rain World</b></li><p>A survival-platformer where you play as a slugcat, navigating a harsh, unforgiving ecosystem.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/312520/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Comedy">
+        <!-- game name --><li><b>Darwin&#39;s Paradox!</b></li><p>A puzzle-platformer where an octopus escapes a lab and explores a chaotic world.</p></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Horror">
+        <!-- game name --><li><b>Little Nightmares</b></li><p>A creepy puzzle-platformer where a girl in a yellow raincoat tries to escape a ship full of grotesque monsters.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/424840/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Horror">
+        <!-- game name --><li><b>Little Nightmares II</b></li><p>The sequel to Little Nightmares, following Mono and Six on a terrifying journey through a distorted world.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/860510/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Horror">
+        <!-- game name --><li><b>Reanimal</b></li><p>An upcoming horror puzzle-platformer from the creators of Little Nightmares.</p></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle">
+        <!-- game name --><li><b>Pink Panther</b></li><p>A charming adventure game featuring the iconic Pink Panther in a series of humorous puzzles.</p></div><div class="game-card" data-tags="Adventure,Platformer,Wholesome">
+        <!-- game name --><li><a href="https://www.youtube.com/watch?v=_zHPxLf0SEg" target="_blank">Psychonauts</a></li><p>A magical 3D platformer where a psychic boy enters people&#39;s minds to uncover their secrets.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/3830/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,Wholesome">
+        <!-- game name --><li><b>Psychonauts 2</b></li><p>The sequel to Psychonauts, featuring more psychic powers and imaginative mind-bending levels.</p></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Exploration">
+        <!-- game name --><li><b>MIO: Memories in Orbit</b></li><p>A sci-fi puzzle-platformer set in a derelict spaceship, filled with mysterious memories.</p></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Narrative">
+        <!-- game name --><li><b>Shady Part of Me</b></li><p>A dreamlike puzzle-platformer where a girl and her shadow work together to navigate surreal environments.</p></div><div class="game-card" data-tags="Strategy,Management,Simulation">
+        <!-- game name --><li><b>Factorio</b></li><p>A simulation strategy game about building and managing automated factories on an alien planet.</p></div><div class="game-card" data-tags="Strategy,Management,Simulation">
+        <!-- game name --><li><b>Captain of Industry</b></li><p>A colony management strategy game focusing on industrial production and resource chains.</p></div><div class="game-card" data-tags="Strategy,Management,Simulation">
+        <!-- game name --><li><b>Townsmen - A Kingdom Rebuilt</b></li><p>A medieval city-building strategy game where you manage a thriving kingdom.</p></div><div class="game-card" data-tags="Strategy,Management,Simulation">
+        <!-- game name --><li><b>Oxygen Not Included</b></li><p>A space-colony simulation game where you manage resources and keep your colonists alive in an asteroid.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/457140/header.jpg"></div><div class="game-card" data-tags="Strategy,Management,Survival">
+        <!-- game name --><li><b>This War of Mine</b></li><p>A war survival strategy game where you control civilians trying to survive in a besieged city.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/282070/header.jpg"></div><div class="game-card" data-tags="Adventure,Survival,Horror">
+        <!-- game name --><li><b>State of Decay</b></li><p>A single-player zombie survival game where you manage a community and fight the undead.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/241540/header.jpg"></div><div class="game-card" data-tags="Strategy,Management,Survival">
+        <!-- game name --><li><b>Frostpunk</b></li><p>A city-building strategy game where you lead the last city on Earth in a frozen wasteland.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/323190/header.jpg"></div><div class="game-card" data-tags="Adventure,Survival,Horror">
+        <!-- game name --><li><b>Don&#39;t Starve</b></li><p>A dark survival adventure game with a unique art style, where you must survive in a harsh wilderness.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/219740/header.jpg"></div><div class="game-card" data-tags="Adventure,Management,Puzzle">
+        <!-- game name --><li><b>Forager</b></li><p>A relaxing adventure game combining exploration, crafting, and resource management.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/751780/header.jpg"></div><div class="game-card" data-tags="Adventure,Exploration,Survival">
+        <!-- game name --><li><b>Subnautica</b></li><p>An open-world underwater exploration and survival game on an alien planet.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/264710/header.jpg"></div><div class="game-card" data-tags="Strategy,Management,Simulation">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/294100/RimWorld/" target="_blank">RimWorld</a></li><p>A sci-fi colony simulation strategy game where you manage survivors on a distant world.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/294100/header.jpg"></div><div class="game-card" data-tags="Strategy,Management,Simulation">
+        <!-- game name --><li><b>The Settlers 2: 10th Anniversary</b></li><p>A classic real-time strategy game about building and managing a medieval settlement.</p></div><div class="game-card" data-tags="Strategy,Management,Simulation">
+        <!-- game name --><li><b>The Guild: Europa 1410</b></li><p>A medieval simulation strategy game where you build a dynasty and run a business.</p></div><div class="game-card" data-tags="Strategy,Management,Simulation">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/1363080/Manor_Lords/" target="_blank">Manor Lords</a></li><p>A medieval city-building strategy game with detailed and realistic management mechanics.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1363080/header.jpg"></div><div class="game-card" data-tags="Strategy,Management,Simulation">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/784150/Workers__Resources_Soviet_Republic/" target="_blank">Workers &amp; Resources: Soviet Republic</a></li><p>A complex city-building strategy game set in a Soviet-themed republic with realistic logistics.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/784150/header.jpg"></div><div class="game-card" data-tags="Strategy,Management,Simulation">
+        <!-- game name --><li><b>Cities: Skylines</b></li><p>A modern city-building simulation game with deep management and traffic systems.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/255710/header.jpg"></div><div class="game-card" data-tags="Strategy,Management,Simulation">
+        <!-- game name --><li><b>Dyson Sphere Program</b></li><p>A space simulation strategy game where you build a megastructure around a star.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1366540/header.jpg"></div><div class="game-card" data-tags="Farming,Life Simulation,Adventure">
+        <!-- game name --><li><b>Coral Island</b></li><p>A tropical farming simulation game with underwater exploration and community building.</p></div><div class="game-card" data-tags="Adventure,Exploration,Simulation">
+        <!-- game name --><li><b>Astroneer</b></li><p>A space exploration and survival game where you terraform planets and build bases.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/361420/header.jpg"></div><div class="game-card" data-tags="Adventure,Exploration,Wholesome">
+        <!-- game name --><li><b>Bloomwalker</b></li><p>An upcoming adventure game with Ghibli-inspired art style, focusing on exploration and discovery.</p></div><div class="game-card" data-tags="Adventure,Exploration,Survival">
+        <!-- game name --><li><b>Core Keeper</b></li><p>A sandbox survival adventure game where you explore a procedurally generated underground world.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1621690/header.jpg"></div><div class="game-card" data-tags="Strategy,RPG,Simulation">
+        <!-- game name --><li><b>Gangland</b></li><p>A unique blend of SIM, RPG, and RTS where you manage a gang in a criminal underworld.</p></div><div class="game-card" data-tags="Simulation,Strategy,Management">
+        <!-- game name --><li><b>Space Engineers 1 &amp; 2</b></li><p>A space engineering simulation game where you build, fly, and explore spacecraft and bases.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/244850/header.jpg"></div><div class="game-card" data-tags="Adventure,Survival,Exploration">
+        <!-- game name --><li><b>The Long Dark</b></li><p>A first-person survival adventure game set in a quiet, frozen post-apocalyptic wilderness.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/305620/header.jpg"></div><div class="game-card" data-tags="Adventure,Horror,Survival">
+        <!-- game name --><li><b>Days Gone</b></li><p>A third-person action-adventure game set in a post-apocalyptic open world overrun by zombies.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1259420/header.jpg"></div><div class="game-card" data-tags="Adventure,Survival,Exploration">
+        <!-- game name --><li><b>Enshrouded!</b></li><p>A survival RPG set in a vast, voxel-based world where you battle monsters and uncover secrets.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1203620/header.jpg"></div><div class="game-card" data-tags="Adventure,Survival,Simulation">
+        <!-- game name --><li><b>Vintage Story</b></li><p>A sandbox survival simulation game with a focus on crafting and exploration.</p></div><div class="game-card" data-tags="Adventure,Survival,Exploration">
+        <!-- game name --><li><b>VALHEIM!</b></li><p>A Viking-inspired survival adventure game where you build, explore, and fight mythical creatures.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/892970/header.jpg"></div><div class="game-card" data-tags="Management,Simulation,Adventure">
+        <!-- game name --><li><b>Graveyard Keeper 1 &amp; 2</b></li><p>A dark and humorous management simulation game where you run a medieval graveyard.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/599140/header.jpg"></div><div class="game-card" data-tags="Strategy,Management,Simulation">
+        <!-- game name --><li><a href="https://www.youtube.com/watch?v=Zu6izpEnirs&amp;list=TLPQMTkwNTIwMjahcdZDidWaeQ&amp;index=8" target="_blank">Medieval Dynasty</a></li><p>A medieval simulation game where you build a dynasty, manage a village, and survive in the wilderness.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1129580/header.jpg"></div><div class="game-card" data-tags="Adventure,Exploration,Strategy">
+        <!-- game name --><li><b>DuneCrawl</b></li><p>An upcoming adventure strategy game set in a desert world, inspired by classic Dune lore.</p></div><div class="game-card" data-tags="Adventure,Exploration,Simulation">
+        <!-- game name --><li><b>Starbound</b></li><p>A sandbox adventure game where you explore procedurally generated planets and build colonies.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/211820/header.jpg"></div><div class="game-card" data-tags="Adventure,Shooter,Sci-Fi">
+        <!-- game name --><li><b>High on Life</b></li><p>A first-person shooter adventure where you use living, talking alien guns to save the galaxy.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1583230/header.jpg"></div><div class="game-card" data-tags="Shooter,Horror,Simulation">
+        <!-- game name --><li><b>Bodycam</b></li><p>A first-person shooter with a unique body-cam perspective, focusing on realistic tactical combat.</p></div><div class="game-card" data-tags="Adventure,Survival,Exploration">
+        <!-- game name --><li><b>Enshrouded!</b></li><p>A survival RPG set in a vast, voxel-based world where you battle monsters and uncover secrets.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1203620/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Exploration">
+        <!-- game name --><li><b>Batman: Arkham City</b></li><p>An open-world action-adventure game where you play as Batman in a sprawling prison-city.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/200260/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Exploration">
+        <!-- game name --><li><b>Batman™: Arkham Knight</b></li><p>The epic conclusion to the Arkham series, featuring Batman&#39;s final battle against the Scarecrow.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/208650/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle">
+        <!-- game name --><li><b>LEGO® Batman™: Legacy of the Dark Knight</b></li><p>A LEGO adventure game featuring Batman and his allies in a humorous, puzzle-filled journey.</p></div><div class="game-card" data-tags="Adventure,RPG,Horror">
+        <!-- game name --><li><b>Mortal Shell I &amp; II</b></li><p>A souls-like action RPG where you possess fallen warriors and fight through a dark, twisted world.</p></div><div class="game-card" data-tags="RPG,Adventure">
+        <!-- game name --><li><b>Baldur’s Gate 3</b></li><p>A deep, story-driven RPG set in the Dungeons &amp; Dragons universe with turn-based combat.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1086940/header.jpg"></div><div class="game-card" data-tags="Adventure,Exploration,Action">
+        <!-- game name --><li><b>Uncharted 4</b></li><p>A cinematic action-adventure game where treasure hunter Nathan Drake embarks on a globe-trotting quest.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1659420/header.jpg"></div><div class="game-card" data-tags="Adventure,Horror,Survival">
+        <!-- game name --><li><b>The Suffering</b></li><p>A psychological horror action game where a prisoner must survive monstrous creatures on a prison island.</p></div><div class="game-card" data-tags="Adventure,Platformer,Action">
+        <!-- game name --><li><b>Ratchet and Clank Future (2007)</b></li><p>A classic 3D platformer adventure featuring the duo of Ratchet and Clank in a futuristic galaxy.</p></div><div class="game-card" data-tags="Adventure,Puzzle,Horror">
+        <!-- game name --><li><b>Routin</b></li><p>A first-person puzzle-adventure game set in a surreal, dreamlike world.</p></div><div class="game-card" data-tags="Adventure,Action,Platformer">
+        <!-- game name --><li><b>My Friend Pedro</b></li><p>A stylish action-platformer where you use physics and slow-motion to take down enemies.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/557340/header.jpg"></div><div class="game-card" data-tags="Adventure,Horror,Survival">
+        <!-- game name --><li><b>Manhunt 1 &amp; 2</b></li><p>A gritty stealth-action game where you survive by executing brutal takedowns in a violent city.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/12130/header.jpg"></div><div class="game-card" data-tags="Adventure,Action">
+        <!-- game name --><li><b>Brutal Legend</b></li><p>A heavy metal-themed action-adventure game where you battle demons with a guitar and axe.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/225260/header.jpg"></div><div class="game-card" data-tags="Strategy,Simulation,Action">
+        <!-- game name --><li><b>Toy Soldiers: Cold War</b></li><p>A toy-based strategy game where you control military miniatures in a Cold War setting.</p></div><div class="game-card" data-tags="Strategy,Simulation,Action">
+        <!-- game name --><li><b>Toy Soldiers: War Chest</b></li><p>A strategy game where you command various toy armies, including classic and fantasy factions.</p></div><div class="game-card" data-tags="Strategy,Simulation,Action">
+        <!-- game name --><li><b>Toy Soldiers: HD</b></li><p>A remastered version of the classic toy army strategy game with improved visuals.</p></div><div class="game-card" data-tags="Adventure,Shooter,Action">
+        <!-- game name --><li><b>Titanfall 2</b></li><p>A fast-paced first-person shooter with wall-running and giant mechs, featuring a great single-player campaign.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1237970/header.jpg"></div><div class="game-card" data-tags="Adventure,RPG,Exploration">
+        <!-- game name --><li><b>Clockwork Revolution</b></li><p>An upcoming steampunk-themed action RPG set in a city where time is a weapon.</p></div><div class="game-card" data-tags="Adventure,Action,Exploration">
+        <!-- game name --><li><b>Spider-Man 2</b></li><p>An open-world action-adventure game where you swing through New York as both Peter Parker and Miles Morales.</p></div><div class="game-card" data-tags="Adventure,Horror,Survival">
+        <!-- game name --><li><b>The Last of Us 1 &amp; 2</b></li><p>A post-apocalyptic survival adventure game with a gripping story and intense stealth-action combat.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1888930/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Stealth">
+        <!-- game name --><li><b>Dishonored: Definitive Edition &amp; 2</b></li><p>A first-person stealth-action game where you use supernatural abilities to assassinate targets in a plague-ridden city.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/205100/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Exploration">
+        <!-- game name --><li><b>Ghost of Tsushima</b></li><p>An open-world action-adventure game set in feudal Japan, where you fight as a samurai against Mongol invaders.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/2215430/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,RPG">
+        <!-- game name --><li><b>Darksiders II</b></li><p>An action RPG where you play as Death, one of the Four Horsemen, in a dark fantasy world.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/50650/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,RPG">
+        <!-- game name --><li><b>Hades 1 &amp; 2</b></li><p>A rogue-like action RPG where you battle through the underworld as the son of Hades.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1145360/header.jpg"></div><div class="game-card" data-tags="Adventure,Shooter,Exploration">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/2416450/MOUSE_PI_For_Hire/" target="_blank">Mouse P.I for Hire</a></li><p>A noir-inspired FPS set in a rubber hose animation style, where you play as a mouse detective.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/2416450/header.jpg"></div><div class="game-card" data-tags="Adventure,Horror,Puzzle">
+        <!-- game name --><li><b>Scorn</b></li><p>A first-person horror adventure set in a nightmarish world inspired by H.R. Giger&#39;s art.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/698670/header.jpg"></div><div class="game-card" data-tags="Adventure,RPG,Horror">
+        <!-- game name --><li><b>Lies of P</b></li><p>A souls-like action RPG where you play as Pinocchio in a dark, twisted world of puppets.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1627720/header.jpg"></div><div class="game-card" data-tags="Adventure,Shooter,Sci-Fi">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/388860/Judas/" target="_blank">Judas</a></li><p>An upcoming narrative-driven first-person shooter from the creator of Bioshock, set in a space colony.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/388860/header.jpg"></div><div class="game-card" data-tags="Adventure,Shooter,Sci-Fi">
+        <!-- game name --><li><a href="https://housemarque.com/games/saros" target="_blank">Saros</a></li><p>An upcoming sci-fi action game from Housemarque, described as a spiritual successor to Returnal.</p></div><div class="game-card" data-tags="Adventure,Shooter,Horror">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/1649240/Returnal/" target="_blank">Returnal™</a></li><p>A roguelike third-person shooter where you fight to survive on a hostile alien planet.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1649240/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,RPG">
+        <!-- game name --><li><b>Dead Cells</b></li><p>A rogue-like action-platformer with fast-paced combat and procedurally generated levels.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/588650/header.jpg"></div><div class="game-card" data-tags="Adventure,Action">
+        <!-- game name --><li><b>Lost in Random</b></li><p>A gothic fairy-tale adventure game with dice-based combat and a unique art style.</p></div><div class="game-card" data-tags="Adventure,Action,Shooter">
+        <!-- game name --><li><b>Suit For Hire</b></li><p>An action game where you play as a hitman with a stylish suit and quick reflexes.</p></div><div class="game-card" data-tags="Adventure,RPG,Action">
+        <!-- game name --><li><b>Diablo II: Resurrected</b></li><p>A remastered version of the classic action RPG, featuring improved visuals and modernized gameplay.</p></div><div class="game-card" data-tags="RPG,Adventure">
+        <!-- game name --><li><b>Pathfinder: Wrath of the Righteous</b></li><p>A deep, story-driven RPG with turn-based combat, set in the Pathfinder universe.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1184370/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure">
+        <!-- game name --><li><b>Tyranny</b></li><p>An isometric RPG where you play as a servant of an evil overlord in a world conquered by evil.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/362960/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure">
+        <!-- game name --><li><b>Divinity: Original Sin II</b></li><p>A critically acclaimed turn-based RPG with deep tactical combat and rich storytelling.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/435150/header.jpg"></div><div class="game-card" data-tags="Adventure,Horror,Survival">
+        <!-- game name --><li><b>R.E.P.O.</b></li><p>An early access survival horror game where you can play solo or with friends in a grim world.</p></div><div class="game-card" data-tags="Adventure,Narrative,Exploration">
+        <!-- game name --><li><a href="https://www.youtube.com/watch?v=7OJbtED_6Hw" target="_blank">Tacoma</a></li><p>A first-person narrative adventure where you investigate a space station&#39;s crew, playing detective.</p></div><div class="game-card" data-tags="Adventure,Narrative,Exploration">
+        <!-- game name --><li><a href="https://www.youtube.com/watch?v=MYO_3hWPoqA" target="_blank">What Remains of Edith Finch</a></li><p>A first-person narrative adventure exploring the haunting stories of a cursed family.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/501300/header.jpg"></div><div class="game-card" data-tags="Shooter,Simulation">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/686810/Hell_Let_Loose/" target="_blank">Hell Let Loose</a></li><p>A realistic World War II tactical shooter with large-scale battles and team-based strategy.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/686810/header.jpg"></div><div class="game-card" data-tags="Adventure,Puzzle,Sci-Fi">
+        <!-- game name --><li><b>Portals 1 &amp; 2 &amp; VR</b></li><p>A revolutionary puzzle platformer where you use a portal gun to solve physics-based challenges.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/400/header.jpg"></div><div class="game-card" data-tags="Adventure,Exploration,Puzzle">
+        <!-- game name --><li><b>Babbdi</b></li><p>A first-person exploration game set in a surreal, dreamlike city filled with secrets.</p></div><div class="game-card" data-tags="Adventure,Survival,Exploration">
+        <!-- game name --><li><b>Pacific Drive</b></li><p>A survival game where you drive through a hostile, anomaly-filled Pacific Northwest forest.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1458140/header.jpg"></div><div class="game-card" data-tags="Adventure,Narrative,Exploration">
+        <!-- game name --><li><b>Firewatch</b></li><p>A first-person mystery adventure set in the Wyoming wilderness, where you work as a fire lookout.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/383870/header.jpg"></div><div class="game-card" data-tags="Adventure,Puzzle,Exploration">
+        <!-- game name --><li><b>WILL: Follow The Light</b></li><p>A first-person puzzle adventure about guiding a light through a mysterious world.</p></div><div class="game-card" data-tags="RPG,Adventure,Sci-Fi">
+        <!-- game name --><li><b>The Outer Worlds 1 &amp; 2</b></li><p>An open-world RPG set in a dystopian space colony, with deep choices and character customization.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/578650/header.jpg"></div><div class="game-card" data-tags="Adventure,Exploration,Puzzle">
+        <!-- game name --><li><b>Outer Wilds 1 &amp; 2</b></li><p>A mystery exploration game set in a time-looping solar system, where you uncover ancient secrets.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/753640/header.jpg"></div><div class="game-card" data-tags="Simulation,Action">
+        <!-- game name --><li><b>Digital Combat Simulator World (DCS)</b></li><p>A highly realistic flight combat simulation game with detailed aircraft and systems.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/223750/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,Simulation">
+        <!-- game name --><li><b>Kingdom Come Deliverance 1 &amp; 2</b></li><p>A historical open-world RPG set in medieval Bohemia, with realistic combat and survival mechanics.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/379430/header.jpg"></div><div class="game-card" data-tags="Adventure,Horror,Survival">
+        <!-- game name --><li><b>Alien: Isolation</b></li><p>A first-person survival horror game where you face a single, relentless Xenomorph on a space station.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/214490/header.jpg"></div><div class="game-card" data-tags="Adventure,Horror,Puzzle">
+        <!-- game name --><li><b>SIGNALIS</b></li><p>A sci-fi survival horror game with classic fixed-camera angles and a deep, atmospheric story.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1262350/header.jpg"></div><div class="game-card" data-tags="Adventure,Survival,Exploration">
+        <!-- game name --><li><b>Grounded: Fully Yaked Edition</b></li><p>A co-op survival adventure where you are shrunk to the size of an ant and must survive in a backyard.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/962130/header.jpg"></div><div class="game-card" data-tags="Adventure,Survival,Exploration">
+        <!-- game name --><li><b>Grounded 2</b></li><p>The sequel to the popular backyard survival adventure game.</p></div><div class="game-card" data-tags="RPG,Adventure,Narrative">
+        <!-- game name --><li><b>Disco Elysium</b></li><p>A groundbreaking open-world RPG where you play as a detective with a unique skill system and no combat.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/632470/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,Wholesome">
+        <!-- game name --><li><b>Undertale</b></li><p>A beloved RPG where you can choose to spare enemies instead of fighting, with a heartfelt story.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/391540/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,Wholesome">
+        <!-- game name --><li><b>DELTARUNE</b></li><p>An RPG adventure from the creator of Undertale, featuring turn-based combat and charming characters.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1671210/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,Puzzle">
+        <!-- game name --><li><b>In Stars And Time</b></li><p>A turn-based RPG where you&#39;re stuck in a time loop and must uncover the truth behind your journey.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1677310/header.jpg"></div><div class="game-card" data-tags="Adventure,Exploration,Simulation">
+        <!-- game name --><li><b>DAVE THE DIVER</b></li><p>A charming adventure game where you dive for fish during the day and run a sushi restaurant at night.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1868140/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,Sci-Fi">
+        <!-- game name --><li><b>Replaced</b></li><p>A dystopian sci-fi action-platformer with beautiful pixel art, releasing March 12th.</p></div><div class="game-card" data-tags="Adventure,Action,Puzzle">
+        <!-- game name --><li><b>Teardown</b></li><p>A voxel-based heist game where you can destroy anything to plan your escape.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1167630/header.jpg"></div><div class="game-card" data-tags="Adventure,Puzzle,Narrative">
+        <!-- game name --><li><b>The Drifter</b></li><p>A pixel art adventure game where you uncover a mysterious story through exploration and puzzles.</p></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle">
+        <!-- game name --><li><b>Recur</b></li><p>A platformer puzzle game with time manipulation mechanics, where you control time to solve challenges.</p></div><div class="game-card" data-tags="Adventure,Puzzle,Exploration">
+        <!-- game name --><li><b>Elroy and the Aliens</b></li><p>A point-and-click adventure game where you help Elroy communicate with aliens.</p></div><div class="game-card" data-tags="Adventure,Horror,Puzzle">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/1752080/HUNGER/" target="_blank">HUNGER</a></li><p>A psychological horror adventure game where you navigate a dark, surreal world.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1752080/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,Horror">
+        <!-- game name --><li><b>East Ward</b></li><p>A pixel art RPG set in a dark fantasy world with deep storytelling and exploration.</p></div><div class="game-card" data-tags="Adventure,RPG,Horror">
+        <!-- game name --><li><b>Exanima</b></li><p>A unique physics-based action RPG with a dark, atmospheric dungeon and realistic combat.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/362490/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Platformer">
+        <!-- game name --><li><a href="https://www.myabandonware.com/game/tom-and-jerry-in-fists-of-furry-bar" target="_blank">Tom and Jerry in Fists of Furry</a></li><p>A classic action game featuring Tom and Jerry in a chaotic fighting adventure.</p></div><div class="game-card" data-tags="Adventure,Action,Platformer">
+        <!-- game name --><li><a href="https://www.myabandonware.com/game/sonic-heroes-cm5#download" target="_blank">Sonic Heroes</a></li><p>A classic 3D platformer where you control teams of Sonic characters in fast-paced levels.</p></div><div class="game-card" data-tags="Adventure,Action,Platformer">
+        <!-- game name --><li><a href="https://www.myabandonware.com/game/tmnt-e7d" target="_blank">TMNT 2007</a></li><p>A Teenage Mutant Ninja Turtles action game based on the 2007 film.</p></div><div class="game-card" data-tags="Adventure,Action,Platformer">
+        <!-- game name --><li><a href="https://www.myabandonware.com/game/tmnt-mutant-melee-loc" target="_blank">TMNT: Mutant Melee</a></li><p>A fighting game featuring the Teenage Mutant Ninja Turtles in chaotic multiplayer battles.</p></div><div class="game-card" data-tags="Adventure,Action,Platformer">
+        <!-- game name --><li><a href="https://www.myabandonware.com/game/teenage-mutant-ninja-turtles-2-battle-nexus-ip8" target="_blank">Teenage Mutant Ninja Turtles 2: Battle Nexus</a></li><p>A 3D platformer where you control the Teenage Mutant Ninja Turtles through time and space.</p></div><div class="game-card" data-tags="Adventure,Action,Platformer">
+        <!-- game name --><li><a href="https://www.myabandonware.com/game/teenage-mutant-ninja-turtles-e7c" target="_blank">Teenage Mutant Ninja Turtles</a></li><p>A classic Teenage Mutant Ninja Turtles beat &#39;em up adventure game.</p></div><div class="game-card" data-tags="Adventure,Action,Puzzle">
+        <!-- game name --><li><b>Noita</b></li><p>A roguelike action game where every pixel is simulated and destructible, with magic-based combat.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/881100/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,Horror">
+        <!-- game name --><li><b>Blasphemous 1 &amp; 2</b></li><p>A brutal action-platformer with dark religious themes and punishing combat.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/774361/header.jpg"></div><div class="game-card" data-tags="Adventure,Horror,Survival">
+        <!-- game name --><li><b>Ware of Mine</b></li><p>A horror survival game set in a mysterious location with intense atmosphere.</p></div><div class="game-card" data-tags="Adventure,Horror,Puzzle">
+        <!-- game name --><li><a href="https://youtube.com/shorts/kExCze7qVWM" target="_blank">Dead Format</a></li><p>A horror game that combines retro aesthetics with psychological scares.</p></div><div class="game-card" data-tags="Adventure,Exploration,Wholesome">
+        <!-- game name --><li><b>TOEM: A Photo Adventure</b></li><p>A heartwarming adventure where you explore the world and take photos with your camera.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1303180/header.jpg"></div><div class="game-card" data-tags="Adventure,Narrative,Exploration">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/1934570/South_of_Midnight/" target="_blank">South of Midnight</a></li><p>A magical adventure game set in the American South, blending folklore and mystery.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1934570/header.jpg"></div><div class="game-card" data-tags="Adventure,RPG,Action">
+        <!-- game name --><li><b>Kingdom Hearts Series</b></li><p>A magical action RPG series that combines Disney worlds with Final Fantasy characters.</p></div><div class="game-card" data-tags="Adventure,Puzzle,Narrative">
+        <!-- game name --><li><b>Valiant Hearts: The Great War</b></li><p>A heartfelt puzzle-adventure game set during World War I, following multiple characters&#39; stories.</p></div><div class="game-card" data-tags="Adventure,RPG,Horror">
+        <!-- game name --><li><b>Kingdom of Night</b></li><p>A dark fantasy RPG set in a world of eternal night, with deep combat and storytelling.</p></div><div class="game-card" data-tags="Adventure,Simulation,Sci-Fi">
+        <!-- game name --><li><b>C-Beams</b></li><p>A sci-fi adventure simulation game set in a futuristic world with deep exploration.</p></div><div class="game-card" data-tags="Adventure,Simulation,Narrative">
+        <!-- game name --><li><a href="https://store.steampowered.com/app/475550/Beholder/" target="_blank">Beholder</a></li><p>A dystopian simulation game where you play as a landlord spying on tenants in a totalitarian state.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/475550/header.jpg"></div><div class="game-card" data-tags="Adventure,Horror,Puzzle">
+        <!-- game name --><li><b>Rue Valley</b></li><p>A psychological horror adventure with atmospheric exploration and mind-bending puzzles.</p></div><div class="game-card" data-tags="Adventure,Exploration,Sandbox">
+        <!-- game name --><li><b>Terraria</b></li><p>A sandbox adventure game where you explore, build, and fight in a pixelated 2D world.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/105600/header.jpg"></div><div class="game-card" data-tags="Adventure,RPG,Simulation">
+        <!-- game name --><li><b>Chef RPG</b></li><p>A life simulation RPG where you run a restaurant in a pixel art world, cooking and adventuring.</p></div><div class="game-card" data-tags="Adventure,Survival,Horror">
+        <!-- game name --><li><b>The Forest</b></li><p>A co-op survival horror game where you crash-land on a cannibal-infested island.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/242760/header.jpg"></div><div class="game-card" data-tags="Adventure,Survival,Horror">
+        <!-- game name --><li><b>Sons of the Forest</b></li><p>The sequel to The Forest, with improved survival mechanics and a larger open world.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1326470/header.jpg"></div><div class="game-card" data-tags="Adventure,Simulation,Horror,Mystery">
+        <!-- game name --><li><b>Voices of the Void</b></li><p>A work-simulator horror game where you monitor space signals and encounter unsettling events.</p></div><div class="game-card" data-tags="Adventure,Action,Exploration">
+        <!-- game name --><li><b>Zelda: Tears of the Kingdom</b></li><p>A groundbreaking Nintendo Switch exclusive where you explore a vast sky and underground world with new building mechanics.</p></div><div class="game-card" data-tags="Adventure,Action,Exploration">
+        <!-- game name --><li><b>Watch Dogs 1 &amp; 2</b></li><p>An open-world hacking adventure where you control the city&#39;s infrastructure to fight crime and corruption.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/243470/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Simulation">
+        <!-- game name --><li><b>Saints Row 3 &amp; 4</b></li><p>An over-the-top open-world action game where you lead a gang and fight against rival factions with absurd weapons.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/55230/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,Legendary">
+        <!-- game name --><li><b>Oblivion</b></li><p>A classic open-world RPG set in Cyrodiil, where you must stop the daedric invasion of Tamriel.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/22330/header.jpg"></div><div class="game-card" data-tags="Adventure,Shooter,Sci-Fi">
+        <!-- game name --><li><b>Bioshock Series</b></li><p>A narrative-driven first-person shooter set in the underwater city of Rapture, with philosophical themes.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/7670/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Survival">
+        <!-- game name --><li><b>Far Cry Primal</b></li><p>An open-world adventure set in the prehistoric era, where you survive and fight as a hunter-gatherer.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/371660/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Shooter">
+        <!-- game name --><li><b>Serious Sam 3 BFE</b></li><p>A classic first-person shooter with hordes of enemies and over-the-top action.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/41070/header.jpg"></div><div class="game-card" data-tags="Adventure,Horror,Survival">
+        <!-- game name --><li><b>Dying Light 1</b></li><p>A parkour-based survival horror game in a zombie-infested open world.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/239140/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Shooter">
+        <!-- game name --><li><b>Gears of War 2</b></li><p>A third-person shooter where you fight against the Locust Horde in a desperate war for humanity.</p></div><div class="game-card" data-tags="Adventure,Horror,Survival">
+        <!-- game name --><li><b>Dead Space Series</b></li><p>A sci-fi survival horror series where you fight necromorphs in a derelict space station.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/17470/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Stealth">
+        <!-- game name --><li><b>Hitman: World of Assassins</b></li><p>A stealth-action game where you take on assassination contracts in detailed sandbox levels.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1659040/header.jpg"></div><div class="game-card" data-tags="Simulation,Action,Exploration">
+        <!-- game name --><li><b>Forza Horizon</b></li><p>An open-world racing game with a vibrant festival setting and realistic driving mechanics.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1551360/header.jpg"></div><div class="game-card" data-tags="Adventure,Shooter,RPG">
+        <!-- game name --><li><b>Borderlands 3 &amp; 4</b></li><p>A looter-shooter series with cel-shaded art, deep character customization, and chaotic co-op action.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/397540/header.jpg"></div><div class="game-card" data-tags="Simulation,Life Simulation,Wholesome">
+        <!-- game name --><li><b>The Sims Series</b></li><p>A life simulation game where you create and control characters, building homes and relationships.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1222670/header.jpg"></div><div class="game-card" data-tags="Adventure,Shooter,Sci-Fi">
+        <!-- game name --><li><b>Half Life 2</b></li><p>A groundbreaking first-person shooter with a gripping story and physics-based puzzles.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/220/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,RPG">
+        <!-- game name --><li><b>Sekiro: Shadows Die Twice</b></li><p>A challenging action-adventure set in feudal Japan, where you play as a shinobi seeking revenge.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/814380/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Legendary">
+        <!-- game name --><li><b>GTA Series</b></li><p>An iconic open-world action series where you explore vast cities and engage in criminal activities.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/271590/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Legendary">
+        <!-- game name --><li><b>Mafia Series</b></li><p>A story-driven open-world series set in the world of organized crime, with deep narratives.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/360430/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Legendary">
+        <!-- game name --><li><b>Red Dead Redemption 1 &amp; 2</b></li><p>An epic open-world western series following outlaws in the dying days of the Wild West.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1174180/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Legendary">
+        <!-- game name --><li><b>Prototype 1 &amp; 2</b></li><p>An action-adventure game where you play as a shape-shifting mutant with devastating powers.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/10150/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,Legendary">
+        <!-- game name --><li><b>The Witcher 3</b></li><p>A critically acclaimed open-world RPG where you play as Geralt of Rivia, hunting monsters.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/292030/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,Legendary">
+        <!-- game name --><li><b>Cyberpunk 2077</b></li><p>A sci-fi open-world RPG set in a dystopian future, with deep character customization and branching narratives.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1091500/header.jpg"></div><div class="game-card" data-tags="Adventure,RPG,Action">
+        <!-- game name --><li><b>Crimson Desert</b></li><p>An upcoming open-world action RPG set in a medieval fantasy world, releasing in 2026.</p></div><div class="game-card" data-tags="Adventure,Action,Legendary">
+        <!-- game name --><li><b>Assassin’s Creed: Black Flag</b></li><p>A swashbuckling open-world adventure where you play as pirate Edward Kenway in the Caribbean.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/242050/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,Legendary">
+        <!-- game name --><li><b>Skyrim</b></li><p>A legendary open-world RPG set in the frozen land of Skyrim, where you battle dragons and uncover ancient secrets.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/72850/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,Legendary">
+        <!-- game name --><li><b>Elden Ring</b></li><p>A massive open-world action RPG with challenging combat and deep exploration.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1245620/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,Legendary">
+        <!-- game name --><li><b>The Elder Scrolls Series: Oblivion &amp; Morrowind</b></li><p>The classic open-world RPG series set in the continent of Tamriel, known for deep lore and exploration.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/22330/header.jpg"></div><div class="game-card" data-tags="Adventure,Horror,Legendary">
+        <!-- game name --><li><b>The Last of Us 1 &amp; 2</b></li><p>A post-apocalyptic survival adventure game with a gripping story and intense stealth-action combat.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1888930/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,Legendary">
+        <!-- game name --><li><b>Dark Souls Series</b></li><p>A legendary action RPG series known for its punishing difficulty, deep combat, and atmospheric world-building.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/211420/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,Legendary">
+        <!-- game name --><li><b>Bloodborne</b></li><p>A gothic action RPG from the creators of Dark Souls, set in a cursed city with fast-paced combat.</p></div><div class="game-card" data-tags="Shooter,Action,Legendary">
+        <!-- game name --><li><b>Battlefield Series</b></li><p>A legendary first-person shooter series known for large-scale battles and destructible environments.</p></div><div class="game-card" data-tags="Adventure,RPG,Legendary">
+        <!-- game name --><li><b>Kingdom Hearts Series</b></li><p>A magical action RPG series that combines Disney worlds with Final Fantasy characters.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/15920/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Legendary">
+        <!-- game name --><li><b>God of War 2018</b></li><p>A legendary action-adventure game where Kratos embarks on a journey through Norse mythology.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1593500/header.jpg"></div><div class="game-card" data-tags="Adventure,Narrative,Stealth">
+        <!-- game name --><li><b>A Plague Tale: Innocence</b></li><p>A narrative-driven adventure game where you guide siblings through a plague-ridden medieval France.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/752590/header.jpg"></div><div class="game-card" data-tags="Adventure,RPG,Exploration">
+        <!-- game name --><li><b>Harry Potter: Hogwarts Legacy</b></li><p>An immersive open-world RPG set in the Harry Potter universe, where you attend Hogwarts School.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/990080/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Exploration">
+        <!-- game name --><li><b>Horizon Zero Dawn</b></li><p>A post-apocalyptic open-world game where you hunt robotic creatures as a skilled archer.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1151640/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Movie-based">
+        <!-- game name --><li><b>Robots</b></li><p>A movie-based action adventure game where you play as Rodney Copperbottom in a robot world.</p></div><div class="game-card" data-tags="Adventure,Action,Movie-based">
+        <!-- game name --><li><b>Bee Movie Game</b></li><p>A movie-based adventure game where you play as Barry B. Benson in the world of bees.</p></div><div class="game-card" data-tags="Adventure,Action,Movie-based">
+        <!-- game name --><li><b>Cars 2: The Game</b></li><p>A movie-based racing adventure game featuring characters from the Cars franchise.</p></div><div class="game-card" data-tags="Adventure,Action,Movie-based">
+        <!-- game name --><li><b>Toy Story 3: The Game</b></li><p>A movie-based action adventure game where you play as Woody and Buzz in a toy world.</p></div><div class="game-card" data-tags="Adventure,Puzzle,Movie-based">
+        <!-- game name --><li><b>Chicken Run</b></li><p>A movie-based puzzle adventure game where you help the chickens escape the farm.</p></div><div class="game-card" data-tags="Adventure,Action,Movie-based">
+        <!-- game name --><li><b>Shrek Super Slam</b></li><p>A movie-based fighting game featuring characters from the Shrek universe.</p></div><div class="game-card" data-tags="Adventure,Action,Platformer">
+        <!-- game name --><li><a href="https://www.myabandonware.com/game/sonic-heroes-cm5#download" target="_blank">Sonic Heroes</a></li><p>A classic 3D platformer where you control teams of Sonic characters in fast-paced levels.</p></div><div class="game-card" data-tags="Adventure,Platformer,Movie-based">
+        <!-- game name --><li><b>Tarzan Game</b></li><p>A movie-based platformer adventure where you play as Tarzan in the jungle.</p></div><div class="game-card" data-tags="Adventure,Action,Movie-based">
+        <!-- game name --><li><b>Disney Infinity Games</b></li><p>A movie-based sandbox adventure game featuring characters from Disney and Pixar films.</p></div><div class="game-card" data-tags="Adventure,Action,Movie-based">
+        <!-- game name --><li><b>Taz Wanted</b></li><p>A movie-based action game where you play as the Tasmanian Devil in a chaotic adventure.</p></div><div class="game-card" data-tags="Adventure,Action,Movie-based">
+        <!-- game name --><li><b>How to Train Your Dragon 2010</b></li><p>A movie-based adventure game where you train dragons and explore the Viking world.</p></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Couch Co-op,Co-op">
+        <!-- game name --><li><b>Split Fiction</b></li><p>A co-op action-adventure game where you travel through different realities with unique mechanics.</p></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Couch Co-op,Co-op">
+        <!-- game name --><li><b>It Takes Two</b></li><p>A co-op adventure game where two players work together to solve puzzles and overcome challenges.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1426210/header.jpg"></div><div class="game-card" data-tags="Adventure,Shooter,RPG,Couch Co-op,Co-op">
+        <!-- game name --><li><b>Risk of Rain 2</b></li><p>A rogue-like third-person shooter with co-op gameplay, where you fight hordes of enemies.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/632360/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Wholesome,Co-op">
+        <!-- game name --><li><b>Party Animals</b></li><p>A physics-based party game where cute animals battle and play in chaotic mini-games.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1260320/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,Puzzle,Couch Co-op,Co-op">
+        <!-- game name --><li><b>Human Fall Flat</b></li><p>A physics-based puzzle platformer where you control a wobbly human in dreamlike worlds.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/477160/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Couch Co-op,Co-op">
+        <!-- game name --><li><b>Fall Guys</b></li><p>A colorful multiplayer party game where you race and battle through obstacle courses.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/1097150/header.jpg"></div><div class="game-card" data-tags="Adventure,Action,Couch Co-op">
+        <!-- game name --><li><b>Gang Beasts</b></li><p>A hilarious physics-based fighting game with wobbly characters in chaotic arenas.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/285900/header.jpg"></div><div class="game-card" data-tags="RPG,Adventure,PS1">
+        <!-- game name --><li><b>Final Fantasy XI</b></li><p>A classic PS1 RPG in the Final Fantasy series with turn-based combat and epic storytelling.</p></div><div class="game-card" data-tags="RPG,Adventure,PS1">
+        <!-- game name --><li><b>Final Fantasy VII</b></li><p>A legendary PS1 RPG with a deep story, unforgettable characters, and iconic turn-based combat.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/39140/header.jpg"></div><div class="game-card" data-tags="Adventure,RPG,PS1">
+        <!-- game name --><li><b>Harry Potter and the Philosopher&#39;s Stone</b></li><p>A classic PS1 adventure game based on the first Harry Potter film, with exploration and spellcasting.</p></div><div class="game-card" data-tags="Adventure,Platformer,PS1">
+        <!-- game name --><li><b>Crash Bandicoot</b></li><p>A classic PS1 platformer where you control Crash through colorful levels to stop Dr. Neo Cortex.</p><img src="https://steamcdn-a.akamaihd.net/steam/apps/731490/header.jpg"></div><div class="game-card" data-tags="Adventure,Platformer,PS1">
+        <!-- game name --><li><b>Crash Bandicoot 3: Warped</b></li><p>A classic PS1 platformer where Crash travels through time to stop the evil Uka Uka.</p></div></ul>
+</div>
+<br>
+<br>
+<h2 id="games-similar-to-prototype-series-%3A" tabindex="-1">Games Similar to Prototype Series :</h2>
+<p>The games here do not match the feeling of super power fantasy character
+with a good back story as much as prototype , but they are the closest</p>
+<ul>
+<li>Infamous Second Son (not for PC , you need emulator)</li>
+<li>Control</li>
+<li>Dishonored</li>
+<li>Quantum Break</li>
+<li>Saints Row 4</li>
+<li>Batman Arkham series (maybe)</li>
+<li>Spider-Man Remastered</li>
+<li>Spider-Man 2</li>
+</ul>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const gameCards = document.querySelectorAll('.game-card');
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Update active button
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      
+      const selectedTag = this.dataset.tag;
+      
+      gameCards.forEach(card => {
+        if (selectedTag === 'all') {
+          card.classList.remove('hidden');
+        } else {
+          const tags = card.dataset.tags.split(',');
+          if (tags.includes(selectedTag)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        }
+      });
+    });
+  });
+});
+</script>
+    </div>
+
+    
+    <script>
+        (function () {
+            const links = document.querySelectorAll("a[href^='http://'], a[href^='https://']");
+            const host = window.location.hostname;
+
+            const isInternalLink = (link) => {
+            try {
+                return new URL(link.href).hostname === host;
+            } catch {
+                return false;
+            }
+            };
+
+            links.forEach(link => {
+            if (!isInternalLink(link)) {
+                link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener");
+            }
+            });
+        })();
+    </script>
+
+</body>
+</html>
